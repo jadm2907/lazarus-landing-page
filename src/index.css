@@ -1,13 +1,131 @@
-body {
+/* index.css - Variables globales y estilos base */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* PALETA DE COLORES UNIFICADA - Basada en el logo Lazarus */
+  --lazarus-primary: #2b5876;
+  --lazarus-secondary: #4b6cb7;
+  --lazarus-accent-1: #3a8d9f;
+  --lazarus-accent-2: #2a9d8f;
+  --lazarus-accent-3: #e76f51;
+  --lazarus-accent-4: #f4a261;
+  
+  /* Escala de grises */
+  --lazarus-white: #ffffff;
+  --lazarus-light: #f8f9fa;
+  --lazarus-medium-light: #e9ecef;
+  --lazarus-medium: #ced4da;
+  --lazarus-medium-dark: #6c757d;
+  --lazarus-dark: #2d3e50;
+  --lazarus-black: #212529;
+  
+  /* Colores semánticos */
+  --lazarus-success: #2a9d8f;
+  --lazarus-warning: #f4a261;
+  --lazarus-danger: #e76f51;
+  --lazarus-info: #3a8d9f;
+  
+  /* Degradados */
+  --gradient-primary: linear-gradient(135deg, var(--lazarus-primary), var(--lazarus-secondary));
+  --gradient-secondary: linear-gradient(135deg, var(--lazarus-accent-1), var(--lazarus-accent-2));
+  --gradient-accent: linear-gradient(135deg, var(--lazarus-accent-3), var(--lazarus-accent-4));
+  --gradient-light: linear-gradient(to bottom, var(--lazarus-light), var(--lazarus-medium-light));
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(43, 88, 118, 0.08);
+  --shadow-md: 0 4px 16px rgba(43, 88, 118, 0.12);
+  --shadow-lg: 0 8px 24px rgba(43, 88, 118, 0.16);
+  --shadow-xl: 0 12px 32px rgba(43, 88, 118, 0.2);
+  
+  /* Bordes */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-2xl: 24px;
+  
+  /* Espaciado */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Tipografía */
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Tamaños de fuente */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  
+  /* Pesos de fuente */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  
+  /* Transiciones */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+}
+
+/* Reset y estilos base */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--lazarus-dark);
+  background-color: var(--lazarus-light);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Contenedores */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }
+
+section {
+  padding: var(--spacing-2xl) 0;
+}
+
+/* Utilidades de texto */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Utilidades de espaciado */
+.mb-xs { margin-bottom: var(--spacing-xs); }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+
+.mt-xs { margin-top: var(--spacing-xs); }
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mt-xl { margin-top: var(--spacing-xl); }

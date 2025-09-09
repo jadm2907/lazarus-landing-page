@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.jsx
+
+import React, { useEffect } from 'react';
+import { initScrollReveal, initParallax, initMobileNav } from './utils/scrollEffects';
+import HeroSection from './components/1_HeroSection';
+import ProblemSection from './components/2_ProblemSection';
+import SolutionSection from './components/3_SolutionSection';
+import ValueProposition from './components/4_ValueProposition';
+import CompanyVision from './components/5_CompanyVision';
+import FutureRoadmap from './components/6_FutureRoadmap';
+import CallToAction from './components/7_CallToAction';
+import Footer from './components/8_Footer';
+import './App.css'; // Asegúrate de que la ruta sea correcta
 
 function App() {
+  useEffect(() => {
+    // Inicializar efectos después de que el componente se monte
+    initScrollReveal();
+    initParallax();
+    initMobileNav();
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeroSection />
+      <ProblemSection />
+      <SolutionSection />
+      <ValueProposition />
+      <CompanyVision />
+      <FutureRoadmap />
+      <CallToAction />
+      <Footer />
     </div>
   );
 }
