@@ -3,162 +3,163 @@
 
 /* Variables adicionales */
 :root {
-  --lazarus-accent-3: #e76f51;
+  --lazarus-accent-3: #e76f51; /* Color de acento personalizado */
 }
 
 /* Sección de Llamada a la Acción */
 #contacto {
   position: relative;
-  padding: var(--spacing-2xl) 0;
-  background: linear-gradient(75deg, rgba(58, 141, 159, 1) 0%, rgba(43, 88, 118, 1) 100%);
-  color: var(--lazarus-secondary);
-  text-align: center;
-  overflow: hidden;
+  padding: var(--spacing-2xl) 0; /* Espaciado vertical grande */
+  background: linear-gradient(75deg, rgba(58, 141, 159, 1) 0%, rgba(43, 88, 118, 1) 100%); /* Fondo con gradiente */
+  color: var(--lazarus-secondary); /* Color de texto secundario */
+  text-align: center; /* Alineación centrada */
+  overflow: hidden; /* Oculta contenido desbordado */
 }
 
 .cta-section {
-  position: relative;
+  position: relative; /* Posicionamiento relativo para elementos hijos */
 }
 
 .container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-  position: relative;
-  z-index: 10;
+  width: 100%; /* Ancho completo */
+  max-width: 1400px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 0 var(--spacing-md); /* Espaciado lateral medio */
+  position: relative; /* Posicionamiento relativo */
+  z-index: 10; /* Capa superior para superposición */
 }
 
 .cta-header {
-  text-align: center;
-  margin-bottom: var(--spacing-2xl);
-  position: relative;
+  text-align: center; /* Alineación centrada */
+  margin-bottom: var(--spacing-2xl); /* Margen inferior grande */
+  position: relative; /* Posicionamiento relativo */
 }
 
 .cta-title {
-  font-family: var(--font-heading);
-  font-size: clamp(var(--text-3xl), 5vw, var(--text-4xl));
-  font-weight: var(--font-bold);
-  color: var(--lazarus-white);
-  margin-bottom: var(--spacing-lg);
-  position: relative;
-  display: inline-block;
+  font-family: var(--font-heading); /* Fuente para títulos */
+  font-size: clamp(var(--text-3xl), 5vw, var(--text-4xl)); /* Tamaño de fuente adaptable */
+  font-weight: var(--font-bold); /* Peso de fuente en negrita */
+  color: var(--lazarus-white); /* Color blanco */
+  margin-bottom: var(--spacing-lg); /* Margen inferior grande */
+  position: relative; /* Posicionamiento relativo */
+  display: inline-block; /* Display inline-block para el pseudo-elemento */
 }
 
 .cta-title::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: var(--gradient-accent);
-  border-radius: var(--border-radius-sm);
+  content: ''; /* Contenido vacío */
+  position: absolute; /* Posicionamiento absoluto */
+  bottom: -8px; /* Posición debajo del título */
+  left: 50%; /* Centrado horizontal */
+  transform: translateX(-50%); /* Ajuste de centrado */
+  width: 80px; /* Ancho de la línea */
+  height: 4px; /* Altura de la línea */
+  background: var(--gradient-accent); /* Fondo con gradiente de acento */
+  border-radius: var(--border-radius-sm); /* Bordes redondeados */
 }
 
 .cta-subtitle {
-  font-size: var(--text-lg);
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.8;
+  font-size: var(--text-lg); /* Tamaño de fuente grande */
+  color: rgba(255, 255, 255, 0.9); /* Color blanco con opacidad */
+  max-width: 600px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+  line-height: 1.8; /* Altura de línea */
 }
 
 /* Fondo con franjas finas */
 #contacto::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  content: ''; /* Contenido vacío */
+  position: absolute; /* Posicionamiento absoluto */
+  top: 0; /* Alineación superior */
+  left: 0; /* Alineación izquierda */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
   background: repeating-linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.05) 0,
     rgba(255, 255, 255, 0.05) 2px,
     transparent 2px,
     transparent 4px
-  );
-  background-size: 100% 8px;
-  animation: stripeShift 5s linear infinite;
-  z-index: 1;
+  ); /* Patrón de franjas */
+  background-size: 100% 8px; /* Tamaño del patrón */
+  animation: stripeShift 5s linear infinite; /* Animación de desplazamiento */
+  z-index: 1; /* Capa inferior */
 }
 
 @keyframes stripeShift {
-  0% { background-position: 0 0; }
-  100% { background-position: 0 -8px; }
+  0% { background-position: 0 0; } /* Posición inicial */
+  100% { background-position: 0 -8px; } /* Posición final */
 }
 
 /* Estilos para las tarjetas ANTES y DESPUÉS */
-.before-card , .after-card {
-  background: rgba(50, 100, 150, 0.2);
-  backdrop-filter: blur(20px);
-  border-radius: var(--border-radius-xl);
-  padding: var(--spacing-xl);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  position: relative;
-  transition: all var(--transition-normal);
-  overflow: hidden;
-  font-size: var(--text-md);
-  color: var(--lazarus-white);
+.before-card, .after-card {
+  background: rgba(50, 100, 150, 0.2); /* Fondo azul con opacidad */
+  backdrop-filter: blur(20px); /* Efecto de desenfoque */
+  border-radius: var(--border-radius-xl); /* Bordes redondeados grandes */
+  padding: var(--spacing-xl); /* Espaciado interno grande */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde blanco con opacidad */
+  position: relative; /* Posicionamiento relativo */
+  transition: all var(--transition-normal); /* Transición suave */
+  overflow: hidden; /* Oculta contenido desbordado */
+  font-size: var(--text-md); /* Tamaño de fuente medio */
+  color: var(--lazarus-white); /* Color blanco */
 }
 
 .before-card {
-  background: rgba(200, 50, 50, 0.2); /* Reddish tint */
+  background: rgba(200, 50, 50, 0.2); /* Tinte rojizo */
 }
+
 .after-card {
-  background: rgba(50, 200, 50, 0.2); /* Greenish tint */
+  background: rgba(50, 200, 50, 0.2); /* Tinte verdoso */
 }
 
 .before-card::before, .after-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-  transition: left 0.6s ease;
+  content: ''; /* Contenido vacío */
+  position: absolute; /* Posicionamiento absoluto */
+  top: 0; /* Alineación superior */
+  left: -100%; /* Fuera de la vista */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent); /* Gradiente para brillo */
+  transition: left 0.6s ease; /* Transición suave */
 }
 
 .before-card:hover::before, .after-card:hover::before {
-  left: 100%;
+  left: 100%; /* Mueve el brillo al pasar el ratón */
 }
 
 .before-card:hover, .after-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-8px) scale(1.02); /* Elevación y escalado al pasar el ratón */
+  background: rgba(255, 255, 255, 0.15); /* Fondo más claro */
+  border-color: rgba(255, 255, 255, 0.4); /* Borde más claro */
 }
 
 .card-icon {
-  font-size: 2.5rem;
-  color: var(--lazarus-white);
-  transition: all var(--transition-normal);
+  font-size: 2.5rem; /* Tamaño de icono grande */
+  color: var(--lazarus-white); /* Color blanco */
+  transition: all var(--transition-normal); /* Transición suave */
 }
 
 .before-card:hover .card-icon, .after-card:hover .card-icon {
-  transform: scale(1.1) rotate(5deg);
-  color: var(--lazarus-secondary);
+  transform: scale(1.1) rotate(5deg); /* Escalado y rotación al pasar el ratón */
+  color: var(--lazarus-secondary); /* Color secundario */
 }
 
 /* Botón */
 .btn {
-  display: inline-block;
-  padding: var(--spacing-lg) var(--spacing-2xl);
-  background-color: var(--lazarus-accent-3);
-  color: var(--lazarus-secondary);
-  border-radius: var(--border-radius-2xl);
-  font-family: var(--font-heading);
-  font-weight: var(--font-semibold);
-  font-size: var(--text-lg);
-  text-decoration: none;
-  transition: all var(--transition-normal);
-  box-shadow: var(--shadow-lg);
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
+  display: inline-block; /* Display inline-block */
+  padding: var(--spacing-lg) var(--spacing-2xl); /* Espaciado interno */
+  background-color: var(--lazarus-accent-3); /* Color de acento */
+  color: var(--lazarus-secondary); /* Color de texto secundario */
+  border-radius: var(--border-radius-2xl); /* Bordes redondeados grandes */
+  font-family: var(--font-heading); /* Fuente para títulos */
+  font-weight: var(--font-semibold); /* Peso de fuente seminegrita */
+  font-size: var(--text-lg); /* Tamaño de fuente grande */
+  text-decoration: none; /* Sin subrayado */
+  transition: all var(--transition-normal); /* Transición suave */
+  box-shadow: var(--shadow-lg); /* Sombra grande */
+  position: relative; /* Posicionamiento relativo */
+  overflow: hidden; /* Oculta contenido desbordado */
+  cursor: pointer; /* Cursor de puntero */
 }
 
 .btn-primary {
@@ -167,17 +168,17 @@
     #ffffff 0%,
     #f8f9fa 50%,
     #ffffff 100%
-  );
-  background-size: 200% 100%;
+  ); /* Gradiente para botón primario */
+  background-size: 200% 100%; /* Tamaño del gradiente */
 }
 
 /* Efectos de hover mejorados */
 .btn:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: var(--shadow-xl);
-  background-color: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.4);
-  color: var(--lazarus-white);
+  transform: translateY(-8px) scale(1.02); /* Elevación y escalado */
+  box-shadow: var(--shadow-xl); /* Sombra más grande */
+  background-color: rgba(255, 255, 255, 0.15); /* Fondo más claro */
+  border-color: rgba(255, 255, 255, 0.4); /* Borde más claro */
+  color: var(--lazarus-white); /* Color blanco */
 }
 
 .btn-primary:hover {
@@ -186,168 +187,164 @@
     transparent 0%,
     rgba(255, 255, 255, 0.3) 50%,
     transparent 100%
-  );
+  ); /* Gradiente al pasar el ratón */
 }
 
 /* Efectos para el icono dentro del botón */
 .btn .btn-icon {
-  transition: all var(--transition-normal);
-  display: inline-block;
+  transition: all var(--transition-normal); /* Transición suave */
+  display: inline-block; /* Display inline-block */
 }
 
 .btn:hover .btn-icon {
-  transform: scale(1.1) rotate(5deg);
-  color: var(--lazarus-white);
+  transform: scale(1.1) rotate(5deg); /* Escalado y rotación */
+  color: var(--lazarus-white); /* Color blanco */
 }
 
 /* Efecto de brillo mejorado */
 @keyframes shimmerAdvanced {
-  0% {
-    background-position: -100% 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
+  0% { background-position: -100% 0; } /* Posición inicial */
+  100% { background-position: 100% 0; } /* Posición final */
 }
 
 /* Pseudo-elemento para el efecto de brillo adicional */
 .btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
+  content: ''; /* Contenido vacío */
+  position: absolute; /* Posicionamiento absoluto */
+  top: 0; /* Alineación superior */
+  left: -100%; /* Fuera de la vista */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
   background: linear-gradient(
     90deg,
     transparent,
     rgba(255, 255, 255, 0.4),
     transparent
-  );
-  transition: left 0.6s ease;
-  z-index: 1;
+  ); /* Gradiente para brillo */
+  transition: left 0.6s ease; /* Transición suave */
+  z-index: 1; /* Capa inferior */
 }
 
 .btn:hover::before {
-  left: 100%;
+  left: 100%; /* Mueve el brillo al pasar el ratón */
 }
 
 /* Asegurar que el contenido del botón esté por encima del brillo */
 .btn > * {
-  position: relative;
-  z-index: 2;
+  position: relative; /* Posicionamiento relativo */
+  z-index: 2; /* Capa superior */
 }
 
 /* Animaciones de entrada */
 .reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
+  opacity: 0; /* Opacidad inicial */
+  transform: translateY(30px); /* Desplazamiento inicial */
+  transition: all 0.8s ease; /* Transición suave */
 }
 
 .reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1; /* Opacidad completa */
+  transform: translateY(0); /* Sin desplazamiento */
 }
 
 .delay-1 { 
-  animation: fadeInUp 0.6s ease-out 0.1s both; 
+  animation: fadeInUp 0.6s ease-out 0.1s both; /* Animación con retraso */
 }
 
 @keyframes fadeInUp {
   from {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 0; /* Opacidad inicial */
+    transform: translateY(30px); /* Desplazamiento inicial */
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Opacidad completa */
+    transform: translateY(0); /* Sin desplazamiento */
   }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   #contacto {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) 0; /* Espaciado vertical reducido */
   }
   
   .cta-title {
-    font-size: var(--text-3xl);
-    padding: 0 var(--spacing-md);
+    font-size: var(--text-3xl); /* Tamaño de fuente reducido */
+    padding: 0 var(--spacing-md); /* Espaciado lateral */
   }
   
   .cta-subtitle {
-    font-size: var(--text-lg);
-    padding: 0 var(--spacing-md);
+    font-size: var(--text-lg); /* Tamaño de fuente grande */
+    padding: 0 var(--spacing-md); /* Espaciado lateral */
   }
   
   .btn {
-    padding: var(--spacing-md) var(--spacing-xl);
-    font-size: var(--text-base);
+    padding: var(--spacing-md) var(--spacing-xl); /* Espaciado reducido */
+    font-size: var(--text-base); /* Tamaño de fuente base */
   }
   
   .btn:hover {
-    transform: translateY(-4px) scale(1.01);
+    transform: translateY(-4px) scale(1.01); /* Efecto de hover reducido */
   }
 }
 
 @media (max-width: 480px) {
   .cta-title {
-    font-size: var(--text-2xl);
+    font-size: var(--text-2xl); /* Tamaño de fuente más pequeño */
   }
   
   .cta-subtitle {
-    font-size: var(--text-base);
+    font-size: var(--text-base); /* Tamaño de fuente base */
   }
   
   .btn {
-    width: 90%;
-    max-width: 300px;
+    width: 90%; /* Ancho casi completo */
+    max-width: 300px; /* Ancho máximo */
   }
   
   .btn:hover {
-    transform: translateY(-2px) scale(1.005);
+    transform: translateY(-2px) scale(1.005); /* Efecto de hover mínimo */
   }
 }
 
 /* Mejoras para accesibilidad */
 @media (prefers-reduced-motion: reduce) {
   .delay-1 {
-    animation: none;
+    animation: none; /* Sin animación */
   }
 
   .btn, .before-card, .after-card {
-    transition: color 0.2s ease;
+    transition: color 0.2s ease; /* Transición solo para color */
   }
   
   .btn:hover, .before-card:hover, .after-card:hover {
-    transform: none;
+    transform: none; /* Sin transformaciones */
   }
   
   .btn::before, .before-card::before, .after-card::before {
-    display: none;
+    display: none; /* Oculta pseudo-elementos */
   }
 
   #contacto::before {
-    animation: none;
+    animation: none; /* Sin animación de franjas */
   }
   
   .btn-primary:hover {
-    animation: none;
+    animation: none; /* Sin animación */
   }
 }
 
 /* Estados de enfoque para accesibilidad */
 .btn:focus, .before-card:focus, .after-card:focus {
-  outline: 2px solid var(--lazarus-accent-1);
-  outline-offset: 2px;
+  outline: 2px solid var(--lazarus-accent-1); /* Borde de enfoque */
+  outline-offset: 2px; /* Desplazamiento del borde */
 }
 
 .btn:focus:not(:focus-visible), .before-card:focus:not(:focus-visible), .after-card:focus:not(:focus-visible) {
-  outline: none;
+  outline: none; /* Sin borde si no es visible */
 }
 
 .btn:focus-visible, .before-card:focus-visible, .after-card:focus-visible {
-  outline: 2px solid var(--lazarus-accent-1);
-  outline-offset: 2px;
+  outline: 2px solid var(--lazarus-accent-1); /* Borde visible */
+  outline-offset: 2px; /* Desplazamiento del borde */
 }

@@ -3,7 +3,7 @@
 
 /* Footer */
 .main-footer {
-  background: rgba(34, 45, 63, 1);
+  background: var(--lazarus-dark);
   color: var(--lazarus-white);
   padding: var(--spacing-2xl) 0 var(--spacing-md);
   position: relative;

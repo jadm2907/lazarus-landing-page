@@ -13,16 +13,6 @@ const CompanyVision = () => {
     <section id="empresa-vision" className="vision-section reveal">
       <div className="solution-bg-pattern parallax-element" data-speed="0.2"></div>
       <div className="solution-geometric-shapes">
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.2" data-type="floating-triangles"></div>
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.4" data-type="concentric-rings"></div>
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.3" data-type="hovering-hexagons"></div>
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.5" data-type="dynamic-connectors"></div>
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.1" data-type="organic-blobs"></div>
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.6" data-type="floating-cubes"></div>
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.3" data-type="geometric-waves"></div>
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.7" data-type="connected-particles"></div>
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.4" data-type="spiral-vortex"></div>
-        <div className="geometric-shape shape-brain parallax-element" data-speed="0.2" data-type="shattered-shapes"></div>
       </div>
       <div className="container">
         <div className="vision-header reveal">
