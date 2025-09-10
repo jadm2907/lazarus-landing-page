@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+Lazarus Landing Page
+Plataforma líder en gestión de salud mental y rehabilitación cognitiva. Este proyecto es una página web desarrollada con React y React Router para mostrar las características y visión de Lazarus Technology SpA.
+Características
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Diseño responsivo: Adaptado para dispositivos móviles y de escritorio.
+Navegación dinámica: Incluye secciones como Inicio, Problema, Solución, Propuesta de Valor, Visión y Llamado a la Acción.
+Páginas legales: Términos y Condiciones, Política de Privacidad, Política de Seguridad y Aviso Legal, accesibles desde el footer.
+Efectos visuales: Animaciones de desplazamiento y paralaje para una experiencia interactiva.
 
-## Available Scripts
+Requisitos previos
 
-In the project directory, you can run:
+Node.js (v16 o superior)
+npm (v8 o superior)
 
-### `npm start`
+Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clona el repositorio:git clone https://github.com/<tu-usuario>/lazarus-landing-page.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Navega al directorio del proyecto:cd lazarus-landing-page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Instala las dependencias:npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Inicia el servidor de desarrollo:npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+La aplicación estará disponible en http://localhost:3000.
 
-### `npm run eject`
+Estructura del proyecto
+lazarus-landing-page/
+├── public/                 # Archivos estáticos (favicon, index.html, etc.)
+├── src/
+│   ├── assets/            # Imágenes y otros recursos
+│   ├── components/        # Componentes React (HeroSection, Footer, etc.)
+│   ├── legal/             # Páginas legales (Términos, Privacidad, etc.)
+│   ├── styles/            # Archivos CSS para estilos
+│   ├── utils/             # Funciones de utilidad (scrollEffects.js, etc.)
+│   ├── App.js             # Componente principal con enrutamiento
+│   ├── index.js           # Punto de entrada de la aplicación
+│   └── index.css          # Estilos globales
+├── package.json           # Dependencias y scripts
+└── README.md              # Documentación del proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Uso
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Navegación: Usa los enlaces del footer para acceder a las secciones de la página principal o a las páginas legales, que se abren en nuevas pestañas.
+Desarrollo: Modifica los componentes en src/components o los estilos en src/styles para personalizar la aplicación.
+Despliegue: Usa npm run build para generar una versión optimizada en la carpeta build.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Dependencias principales
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React: ^18.2.0
+React Router DOM: ^6.14.0
 
-## Learn More
+Contribución
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Haz un fork del repositorio.
+Crea una rama para tu funcionalidad: git checkout -b feature/nueva-funcionalidad.
+Realiza tus cambios y haz commit: git commit -m "Agrega nueva funcionalidad".
+Envía tus cambios: git push origin feature/nueva-funcionalidad.
+Abre un Pull Request en GitHub.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contacto
 
-### Code Splitting
+Email: joseandresdonoso290723@gmail.com
+LinkedIn: José Andrés Donoso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Licencia
+© 2025 Lazarus Technology SpA. Todos los derechos reservados.
