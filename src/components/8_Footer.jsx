@@ -17,24 +17,18 @@ const Footer = () => {
       const footerPosition = footerElement.getBoundingClientRect();
       const windowHeight = window.innerHeight;
 
-      // Mostrar footer cuando esté en viewport
       if (footerPosition.top < windowHeight * 0.8) {
         setIsFooterVisible(true);
-      } 
-      // Ocultar footer cuando se hace scroll hacia arriba y el footer no está completamente visible
-      else if (currentScrollY > lastScrollY && footerPosition.top > windowHeight * 0.5) {
+      } else if (currentScrollY > lastScrollY && footerPosition.top > windowHeight * 0.5) {
         setIsFooterVisible(false);
       }
 
       setLastScrollY(currentScrollY);
     };
 
-    // Usar un debounce para mejorar el rendimiento
     const debouncedScroll = debounce(handleScroll, 50);
     
     window.addEventListener('scroll', debouncedScroll);
-    
-    // Comprobar visibilidad inicial
     handleScroll();
     
     return () => {
@@ -42,7 +36,6 @@ const Footer = () => {
     };
   }, [lastScrollY]);
 
-  // Función debounce para optimizar el scroll
   const debounce = (func, wait) => {
     let timeout;
     return function executedFunction(...args) {
@@ -66,6 +59,7 @@ const Footer = () => {
             <h3>Lazarus</h3>
             <p>La plataforma líder en gestión de salud mental y rehabilitación cognitiva.</p>
           </div>
+          
           <div className="footer-section links">
             <h3>Enlaces Rápidos</h3>
             <ul>
@@ -75,9 +69,20 @@ const Footer = () => {
               <li><a href="#propuesta-de-valor">Propuesta de Valor</a></li>
             </ul>
           </div>
+
+          <div className="footer-section links">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/terminos" target="_blank" rel="noopener noreferrer">Términos y Condiciones</a></li>
+              <li><a href="/privacidad" target="_blank" rel="noopener noreferrer">Política de Privacidad</a></li>
+              <li><a href="/seguridad" target="_blank" rel="noopener noreferrer">Política de Seguridad</a></li>
+              <li><a href="/aviso-legal" target="_blank" rel="noopener noreferrer">Aviso Legal</a></li>
+            </ul>
+          </div>
+
           <div className="footer-section contact">
             <h3>Contacto</h3>
-            <p>Email: joseandresdonoso290723@gmail.com</p>
+            <p>Email: <a href="mailto:joseandresdonoso290723@gmail.com">joseandresdonoso290723@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/joseandresdonosomolina" target="_blank" rel="noopener noreferrer">José Andrés Donoso</a></p>
             <div className="social-links">
               <a href="#" className="social-link">FB</a>
