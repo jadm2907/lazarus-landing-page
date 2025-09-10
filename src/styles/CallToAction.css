@@ -1,0 +1,353 @@
+/* CallToAction.css - Estilos para el componente CallToAction */
+@import '../index.css';
+
+/* Variables adicionales */
+:root {
+  --lazarus-accent-3: #e76f51;
+}
+
+/* Sección de Llamada a la Acción */
+#contacto {
+  position: relative;
+  padding: var(--spacing-2xl) 0;
+  background: linear-gradient(75deg, rgba(58, 141, 159, 1) 0%, rgba(43, 88, 118, 1) 100%);
+  color: var(--lazarus-secondary);
+  text-align: center;
+  overflow: hidden;
+}
+
+.cta-section {
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  position: relative;
+  z-index: 10;
+}
+
+.cta-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  position: relative;
+}
+
+.cta-title {
+  font-family: var(--font-heading);
+  font-size: clamp(var(--text-3xl), 5vw, var(--text-4xl));
+  font-weight: var(--font-bold);
+  color: var(--lazarus-white);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  display: inline-block;
+}
+
+.cta-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-accent);
+  border-radius: var(--border-radius-sm);
+}
+
+.cta-subtitle {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Fondo con franjas finas */
+#contacto::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 0,
+    rgba(255, 255, 255, 0.05) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  background-size: 100% 8px;
+  animation: stripeShift 5s linear infinite;
+  z-index: 1;
+}
+
+@keyframes stripeShift {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 -8px; }
+}
+
+/* Estilos para las tarjetas ANTES y DESPUÉS */
+.before-card , .after-card {
+  background: rgba(50, 100, 150, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: var(--border-radius-xl);
+  padding: var(--spacing-xl);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  transition: all var(--transition-normal);
+  overflow: hidden;
+  font-size: var(--text-md);
+  color: var(--lazarus-white);
+}
+
+.before-card {
+  background: rgba(200, 50, 50, 0.2); /* Reddish tint */
+}
+.after-card {
+  background: rgba(50, 200, 50, 0.2); /* Greenish tint */
+}
+
+.before-card::before, .after-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.before-card:hover::before, .after-card:hover::before {
+  left: 100%;
+}
+
+.before-card:hover, .after-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: var(--lazarus-white);
+  transition: all var(--transition-normal);
+}
+
+.before-card:hover .card-icon, .after-card:hover .card-icon {
+  transform: scale(1.1) rotate(5deg);
+  color: var(--lazarus-secondary);
+}
+
+/* Botón */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  background-color: var(--lazarus-accent-3);
+  color: var(--lazarus-secondary);
+  border-radius: var(--border-radius-2xl);
+  font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-lg);
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-image: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #f8f9fa 50%,
+    #ffffff 100%
+  );
+  background-size: 200% 100%;
+}
+
+/* Efectos de hover mejorados */
+.btn:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--lazarus-white);
+}
+
+.btn-primary:hover {
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+/* Efectos para el icono dentro del botón */
+.btn .btn-icon {
+  transition: all var(--transition-normal);
+  display: inline-block;
+}
+
+.btn:hover .btn-icon {
+  transform: scale(1.1) rotate(5deg);
+  color: var(--lazarus-white);
+}
+
+/* Efecto de brillo mejorado */
+@keyframes shimmerAdvanced {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Pseudo-elemento para el efecto de brillo adicional */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.6s ease;
+  z-index: 1;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+/* Asegurar que el contenido del botón esté por encima del brillo */
+.btn > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animaciones de entrada */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { 
+  animation: fadeInUp 0.6s ease-out 0.1s both; 
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #contacto {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .cta-title {
+    font-size: var(--text-3xl);
+    padding: 0 var(--spacing-md);
+  }
+  
+  .cta-subtitle {
+    font-size: var(--text-lg);
+    padding: 0 var(--spacing-md);
+  }
+  
+  .btn {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--text-base);
+  }
+  
+  .btn:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+    font-size: var(--text-2xl);
+  }
+  
+  .cta-subtitle {
+    font-size: var(--text-base);
+  }
+  
+  .btn {
+    width: 90%;
+    max-width: 300px;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px) scale(1.005);
+  }
+}
+
+/* Mejoras para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .delay-1 {
+    animation: none;
+  }
+
+  .btn, .before-card, .after-card {
+    transition: color 0.2s ease;
+  }
+  
+  .btn:hover, .before-card:hover, .after-card:hover {
+    transform: none;
+  }
+  
+  .btn::before, .before-card::before, .after-card::before {
+    display: none;
+  }
+
+  #contacto::before {
+    animation: none;
+  }
+  
+  .btn-primary:hover {
+    animation: none;
+  }
+}
+
+/* Estados de enfoque para accesibilidad */
+.btn:focus, .before-card:focus, .after-card:focus {
+  outline: 2px solid var(--lazarus-accent-1);
+  outline-offset: 2px;
+}
+
+.btn:focus:not(:focus-visible), .before-card:focus:not(:focus-visible), .after-card:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.btn:focus-visible, .before-card:focus-visible, .after-card:focus-visible {
+  outline: 2px solid var(--lazarus-accent-1);
+  outline-offset: 2px;
+}

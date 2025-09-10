@@ -7,7 +7,7 @@ import ProblemSection from './components/2_ProblemSection';
 import SolutionSection from './components/3_SolutionSection';
 import ValueProposition from './components/4_ValueProposition';
 import CompanyVision from './components/5_CompanyVision';
-import FutureRoadmap from './components/6_FutureRoadmap';
+//import FutureRoadmap from './components/6_FutureRoadmap';
 import CallToAction from './components/7_CallToAction';
 import Footer from './components/8_Footer';
 import './App.css'; // Asegúrate de que la ruta sea correcta
@@ -26,7 +26,6 @@ function App() {
       <SolutionSection />
       <ValueProposition />
       <CompanyVision />
-      <FutureRoadmap />
       <CallToAction />
       <Footer />
     </div>

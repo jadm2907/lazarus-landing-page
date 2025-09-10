@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import '../styles/FutureRoadmap.css';
 
 const FutureRoadmap = () => {
   return (

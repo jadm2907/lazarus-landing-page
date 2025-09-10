@@ -1,0 +1,511 @@
+/* ValueProposition.css - Estilos para el componente ValueProposition */
+@import '../index.css';
+
+/* Sección de Propuesta de Valor */
+#propuesta-de-valor {
+  position: relative;
+  padding: var(--spacing-2xl) 0;
+  background: var(--lazarus-light);
+  color: var(--lazarus-dark);
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.value-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  position: relative;
+}
+
+.value-title {
+  font-family: var(--font-heading);
+  font-size: clamp(var(--text-3xl), 5vw, var(--text-4xl));
+  font-weight: var(--font-bold);
+  color: var(--lazarus-primary);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  display: inline-block;
+}
+
+.value-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-accent);
+  border-radius: var(--border-radius-sm);
+}
+
+.value-subtitle {
+  font-size: var(--text-lg);
+  color: var(--lazarus-medium-dark);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Diagrama Circular */
+.value-diagram {
+  margin: var(--spacing-2xl) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateY(var(--scroll-parallax, 0));
+}
+
+.diagram-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-circle {
+  width: 200px;
+  height: 200px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-xl);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: var(--shadow-xl);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 12px 40px rgba(43, 88, 118, 0.3);
+  }
+}
+
+.lazarus-logo {
+  text-align: center;
+  color: var(--lazarus-white);
+}
+
+.logo-text {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  letter-spacing: 2px;
+}
+
+/* Nodos de beneficios */
+.benefit-node {
+  position: absolute;
+  width: 180px;
+  padding: var(--spacing-lg);
+  background: var(--lazarus-white);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  border: 2px solid var(--lazarus-light);
+  transition: var(--transition-normal);
+  transform: translateY(0);
+  z-index: 5;
+}
+
+.benefit-node:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--lazarus-accent-1);
+}
+
+.node-title {
+  font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
+  color: var(--lazarus-primary);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--text-md);
+}
+
+.node-content {
+  font-size: var(--text-sm);
+  color: #64748b;
+}
+
+/* Posiciones corregidas para los nodos */
+.node-1 {
+  top: 20%;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: float 4s ease-in-out infinite;
+}
+
+.node-2 {
+  top: 50%;
+  right: 70%;
+  transform: translateX(50%);
+  animation: float 4s ease-in-out infinite 1.3s;
+}
+
+.node-3 {
+  bottom: 20%;
+  left: 70%;
+  transform: translateX(-50%);
+  animation: float 4s ease-in-out infinite 2.6s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto var(--spacing-md);
+  background: var(--gradient-secondary);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lazarus-white);
+  transition: var(--transition-normal);
+}
+
+.benefit-node:hover .benefit-icon {
+  background: var(--gradient-primary);
+  transform: scale(1.1);
+}
+
+.benefit-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Líneas de conexión corregidas */
+.connection-line {
+  position: absolute;
+  background: var(--lazarus-medium-light);
+  z-index: 4;
+  height: 2px;
+}
+
+.line-1 {
+  width: 250px;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-60deg);
+}
+
+.line-2 {
+  width: 250px;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) rotate(60deg);
+}
+
+.line-3 {
+  width: 250px;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%) rotate(60deg);
+}
+
+/* Grid de tarjetas de valor */
+.value-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+/* Tarjetas de valor */
+.value-card {
+  background: var(--lazarus-white);
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+  border: 1px solid var(--lazarus-medium-light);
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Header de las tarjetas */
+.card-header {
+  padding: var(--spacing-xl);
+  background: var(--gradient-light);
+  border-bottom: 1px solid var(--lazarus-medium-light);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.card-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--gradient-primary);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lazarus-white);
+  flex-shrink: 0;
+}
+
+.card-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.card-header h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--lazarus-primary);
+  margin: 0;
+}
+
+/* Contenido de las tarjetas */
+.card-content {
+  padding: var(--spacing-xl);
+}
+
+.card-content p {
+  font-size: var(--text-base);
+  color: var(--lazarus-medium-dark);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Lista de beneficios */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-list li {
+  font-size: var(--text-sm);
+  color: var(--lazarus-dark);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--lazarus-medium-light);
+  position: relative;
+  padding-left: var(--spacing-lg);
+}
+
+.benefits-list li:last-child {
+  border-bottom: none;
+}
+
+.benefits-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--lazarus-success);
+  font-weight: var(--font-bold);
+}
+
+/* Animaciones de entrada */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { animation: fadeInUp 0.6s ease-out 0.1s both; }
+.delay-2 { animation: fadeInUp 0.6s ease-out 0.3s both; }
+.delay-3 { animation: fadeInUp 0.6s ease-out 0.5s both; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Parallax */
+.parallax-element {
+  transform: translateY(var(--scroll-parallax, 0));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #propuesta-de-valor {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .value-title {
+    font-size: var(--text-3xl);
+  }
+
+  .value-subtitle {
+    font-size: var(--text-base);
+  }
+
+  .diagram-container {
+    width: 100%;
+    height: 600px;
+    transform: scale(0.8);
+  }
+
+  .benefit-node {
+    width: 160px;
+    padding: var(--spacing-md);
+  }
+
+  .value-cards-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .card-header {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+  }
+
+  .card-content {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .value-title {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .value-subtitle {
+    font-size: var(--text-xs);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .diagram-container {
+    transform: scale(0.6);
+    height: 400px;
+  }
+
+  .benefit-node {
+    width: 140px;
+    padding: var(--spacing-sm);
+  }
+
+  .node-title {
+    font-size: var(--text-base);
+  }
+
+  .node-content {
+    font-size: var(--text-xs);
+    line-height: 1.3;
+  }
+
+  .central-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .logo-text {
+    font-size: var(--text-xl);
+  }
+
+  .card-header {
+    padding: var(--spacing-lg);
+  }
+
+  .card-header h3 {
+    font-size: var(--text-lg);
+  }
+
+  .connection-line {
+    height: 1px;
+  }
+
+  .line-1,
+  .line-2,
+  .line-3 {
+    width: 120px;
+  }
+}
+
+/* Mejoras para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .delay-1,
+  .delay-2,
+  .delay-3,
+  .central-circle,
+  .node-1,
+  .node-2,
+  .node-3 {
+    animation: none;
+  }
+
+  .benefit-node,
+  .value-card,
+  .benefit-icon {
+    transition: none;
+  }
+}
+
+/* Estados de enfoque para accesibilidad */
+.benefit-node:focus-within,
+.value-card:focus-within {
+  outline: 2px solid var(--lazarus-accent-1);
+  outline-offset: 2px;
+}
+
+/* Mejoras para impresión */
+@media print {
+  .value-diagram {
+    break-inside: avoid;
+  }
+
+  .value-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid var(--lazarus-medium);
+  }
+
+  .connection-line {
+    display: none;
+  }
+
+  .central-circle,
+  .node-1,
+  .node-2,
+  .node-3 {
+    animation: none;
+  }
+}

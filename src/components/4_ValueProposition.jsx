@@ -1,67 +1,74 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
+import '../styles/ValueProposition.css';
+import { initScrollReveal, initParallax } from '../utils/scrollEffects.js';
 
 const ValueProposition = () => {
+  useEffect(() => {
+    initScrollReveal();
+    initParallax();
+  }, []);
+
   return (
-    <section id="propuesta-de-valor" className="reveal">
+    <section id="propuesta-de-valor" className="value-section reveal">
       <div className="container">
-        <h2 className="section-title">El Valor de LAZARUS para Cada Usuario</h2>
-        <p className="section-subtitle">
-          LAZARUS SGCR está diseñado para mejorar la productividad y la calidad de vida de todos los involucrados en el proceso de rehabilitación.
-        </p>
+        <div className="value-header reveal">
+          <h2 className="value-title">El Valor de LAZARUS para Cada Usuario</h2>
+          <p className="value-subtitle">
+            LAZARUS está diseñado para mejorar la productividad y la calidad de vida de todos los involucrados en el proceso de rehabilitación.
+          </p>
+        </div>
 
         {/* Diagrama Circular Central */}
-        <div className="value-diagram">
+        <div className="value-diagram parallax-element" data-speed="0.2">
           <div className="diagram-container">
-            <div className="central-circle">
+            <div className="central-circle reveal">
               <div className="lazarus-logo">
                 <span className="logo-text">LAZARUS</span>
-                
               </div>
             </div>
             
             {/* Beneficios alrededor del círculo */}
-            <div class="benefit-node node-1">
-                        <div class="benefit-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                            </svg>
-                        </div>
-                        <div class="node-title">Sin Riesgos</div>
-                        <div class="node-content">Prueba gratuita de 14 días para explorar todas las funcionalidades</div>
-                    </div>
-                    
-                    <div class="benefit-node node-2">
-                        <div class="benefit-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg>
-                        </div>
-                        <div class="node-title">Ahorro de Tiempo</div>
-                        <div class="node-content">Reduce 40% la carga administrativa comparado con sistemas tradicionales</div>
-                    </div>
-                    
-                    <div class="benefit-node node-3">
-                        <div class="benefit-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                            </svg>
-                        </div>
-                        <div class="node-title">Adaptabilidad</div>
-                        <div class="node-content">Ideal para psicólogos, neuropsicólogos y centros de rehabilitación</div>
-                    </div>
+            <div className="benefit-node node-1 reveal delay-1">
+              <div className="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                </svg>
               </div>
-              {/* Líneas de conexión */}
-              <div className="connection-line line-1"></div>
-              <div className="connection-line line-2"></div>
-              <div className="connection-line line-3"></div>
+              <div className="node-title">Sin Riesgos</div>
+              <div className="node-content">Prueba gratuita de 14 días para explorar todas las funcionalidades</div>
+            </div>
+            
+            <div className="benefit-node node-2 reveal delay-2">
+              <div className="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div className="node-title">Ahorro de Tiempo</div>
+              <div className="node-content">Reduce 40% la carga administrativa comparado con sistemas tradicionales</div>
+            </div>
+            
+            <div className="benefit-node node-3 reveal delay-3">
+              <div className="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                </svg>
+              </div>
+              <div className="node-title">Adaptabilidad</div>
+              <div className="node-content">Ideal para psicólogos, neuropsicólogos y centros de rehabilitación</div>
+            </div>
+            {/* Líneas de conexión */}
+            <div className="connection-line line-1"></div>
+            <div className="connection-line line-2"></div>
+            <div className="connection-line line-3"></div>
           </div>
-        
+        </div>
 
         {/* Tarjetas de Valor Detalladas */}
-        <div className="value-cards-grid">
-          <div className="value-card professionals delay-1">
+        <div className="value-cards-grid grid">
+          <div className="value-card professionals reveal delay-1">
             <div className="card-header">
               <div className="card-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -84,7 +91,7 @@ const ValueProposition = () => {
             </div>
           </div>
 
-          <div className="value-card patients delay-2">
+          <div className="value-card patients reveal delay-2">
             <div className="card-header">
               <div className="card-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -106,7 +113,7 @@ const ValueProposition = () => {
             </div>
           </div>
 
-          <div className="value-card centers delay-3">
+          <div className="value-card centers reveal delay-3">
             <div className="card-header">
               <div className="card-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">

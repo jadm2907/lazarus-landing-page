@@ -1,16 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../App.css';
 import logo from '../assets/images/logo-img.png';
 import BrainBackground from '../utils/BrainBackground';
+import '../styles/HeroSection.css';
+import '../styles/BrainBackground.css';
+// Importa las funciones de scroll effects
+import { initScrollReveal, initParallax, initMobileNav } from '../utils/scrollEffects';
 
 const HeroSection = () => {
   const [scrolled, setScrolled] = useState(false);
+  const heroRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 50;
       setScrolled(isScrolled);
     };
+
+    // Inicializar todos los efectos de scroll
+    initScrollReveal();
+    initParallax();
+    initMobileNav();
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -37,16 +47,18 @@ const HeroSection = () => {
         </div>
       </header>
 
-      <section id="hero" className="hero-section">
-        <BrainBackground />
-        <div className="hero-content">
-          <h1 className="hero-title">La Plataforma Todo en Uno para la Gestión de la Salud Mental</h1>
-          <p className="hero-subtitle">Una solución digital centralizada para optimizar la administración de pacientes, evaluaciones y tratamientos.</p>
-          <div className="hero-cta">
-            <button className="cta-button">Descubre cómo</button>
-          </div>
-        </div>
-      </section>
+      <section id="hero" className="hero-section" ref={heroRef}>
+  <div className="brain-container">
+    <BrainBackground className="parallax-element" data-speed="0.3" />
+  </div>
+  <div className="hero-content reveal">
+    <h1 className="hero-title">La Plataforma Todo en Uno para la Gestión de la Salud Mental</h1>
+    <p className="hero-subtitle">Una solución digital centralizada para optimizar la administración de pacientes, evaluaciones y tratamientos.</p>
+    <div className="hero-cta">
+      <button className="cta-button">Descubre cómo</button>
+    </div>
+  </div>
+</section>
     </>
   );
 };

@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
+import '../styles/ProblemSection.css';
+import { initScrollReveal } from '../utils/scrollEffects';
 
 const ProblemSection = () => {
+  useEffect(() => {
+    // Inicializar efectos de scroll
+    initScrollReveal();
+  }, []);
+
   return (
-    <section className="enhanced-problem-section" id="problema">
+    <section className="enhanced-problem-section reveal" id="problema">
         <div className="floating-elements">
           <div className="floating-shape shape-1"></div>
           <div className="floating-shape shape-2"></div>
@@ -11,7 +18,7 @@ const ProblemSection = () => {
         </div>
 
         <div className="container">
-          <div className="section-header">
+          <div className="section-header reveal delay-1">
             <h2 className="section-title">Los desafíos de la gestión clínica</h2>
             <p className="intro-text">
               Entendemos los obstáculos a los que se enfrentan los profesionales de la salud mental y las instituciones.
@@ -19,7 +26,7 @@ const ProblemSection = () => {
           </div>
 
           <div className="problems-container">
-            <div className="problem-card">
+            <div className="problem-card reveal delay-1">
               <div className="problem-icon-container">
                 <i className="problem-icon">📋</i>
               </div>
@@ -38,7 +45,7 @@ const ProblemSection = () => {
               </div>
             </div>
 
-            <div className="problem-card">
+            <div className="problem-card reveal delay-2">
               <div className="problem-icon-container">
                 <i className="problem-icon">📈</i>
               </div>
@@ -56,7 +63,7 @@ const ProblemSection = () => {
               </div>
             </div>
 
-            <div className="problem-card">
+            <div className="problem-card reveal delay-3">
               <div className="problem-icon-container">
                 <i className="problem-icon">🛡️</i>
               </div>
@@ -71,7 +78,7 @@ const ProblemSection = () => {
               </div>
             </div>
 
-            <div className="problem-card">
+            <div className="problem-card reveal delay-1">
               <div className="problem-icon-container">
                 <i className="problem-icon">🔧</i>
               </div>
@@ -89,7 +96,7 @@ const ProblemSection = () => {
             </div>
           </div>
 
-          <div className="stats-container">
+          <div className="stats-container reveal delay-2">
             <div className="stats-grid">
               <div className="stat-item">
                 <div className="stat-number">72%</div>

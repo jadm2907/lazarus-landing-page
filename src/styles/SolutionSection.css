@@ -1,0 +1,515 @@
+/* SolutionSection.css - Styles for SolutionSection component */
+@import '../index.css';
+
+/* Solution Section */
+#solucion {
+  position: relative;
+  padding: var(--spacing-2xl) 0;
+  background: var(--gradient-primary);
+  color: var(--lazarus-white);
+  text-align: center;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.solution-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  position: relative;
+}
+
+.solution-title {
+  font-family: var(--font-heading);
+  font-size: clamp(var(--text-3xl), 5vw, var(--text-4xl));
+  font-weight: var(--font-bold);
+  color: var(--lazarus-white);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  display: inline-block;
+}
+
+.solution-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-accent);
+  border-radius: var(--border-radius-sm);
+}
+
+.solution-subtitle {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Fondo y patrón animado */
+.solution-bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  background-image: 
+    radial-gradient(circle at 25% 25%, var(--lazarus-white) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, var(--lazarus-white) 1px, transparent 1px);
+  background-size: 50px 50px, 30px 30px;
+  animation: patternMove 20s linear infinite;
+  transform: translateY(var(--scroll-parallax, 0));
+}
+
+@keyframes patternMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+/* Formas geométricas animadas */
+.solution-geometric-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.geometric-shape {
+  position: absolute;
+  opacity: 0.15;
+}
+
+.shape-brain[data-type="connected-particles"] {
+  top: 15%;
+  right: 10%;
+  width: 180px;
+  height: 180px;
+  background: transparent;
+  animation: particleConnect 6s ease-in-out infinite;
+}
+
+.shape-brain[data-type="connected-particles"]::before,
+.shape-brain[data-type="connected-particles"]::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--lazarus-white);
+  border-radius: 50%;
+}
+
+.shape-brain[data-type="connected-particles"]::before {
+  top: 20%;
+  left: 20%;
+  animation: particleFloat 3s ease-in-out infinite;
+}
+
+.shape-brain[data-type="connected-particles"]::after {
+  bottom: 20%;
+  right: 20%;
+  animation: particleFloat 3s ease-in-out infinite 0.5s;
+}
+
+.shape-brain[data-type="dynamic-connectors"] {
+  bottom: 20%;
+  left: 10%;
+  width: 120px;
+  height: 240px;
+  background: linear-gradient(45deg, transparent 40%, var(--lazarus-white) 40%, var(--lazarus-white) 60%, transparent 60%);
+  animation: connectorPulse 5s linear infinite;
+}
+
+.shape-brain[data-type="shattered-shapes"] {
+  top: 25%;
+  left: 15%;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  animation: shatterEffect 7s ease-in-out infinite;
+}
+
+.shape-brain[data-type="shattered-shapes"]::before,
+.shape-brain[data-type="shattered-shapes"]::after {
+  content: '';
+  position: absolute;
+  background: var(--lazarus-white);
+  opacity: 0.2;
+}
+
+.shape-brain[data-type="shattered-shapes"]::before {
+  width: 60px;
+  height: 60px;
+  top: 10%;
+  left: 10%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  animation: shatterPiece 4s ease-in-out infinite;
+}
+
+.shape-brain[data-type="shattered-shapes"]::after {
+  width: 80px;
+  height: 80px;
+  bottom: 10%;
+  right: 10%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  animation: shatterPiece 4s ease-in-out infinite 0.3s;
+}
+
+@keyframes particleConnect {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.2) rotate(5deg); }
+}
+
+@keyframes connectorPulse {
+  0% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(360deg) scale(1.1); }
+}
+
+@keyframes shatterEffect {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-10px, 10px) scale(1.05); }
+}
+
+@keyframes shatterPiece {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(5px, -5px); }
+}
+
+@keyframes particleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Efectos en tarjetas de características */
+.feature-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: var(--border-radius-xl);
+  padding: var(--spacing-xl);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.feature-card:hover::before {
+  left: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Estructura de las tarjetas */
+.feature-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--lazarus-white);
+  transition: all var(--transition-normal);
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1) rotate(5deg);
+  color: var(--lazarus-secondary);
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--lazarus-white);
+  margin: 0;
+}
+
+.feature-description {
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+/* Visualizaciones específicas para cada feature */
+.hce-visual {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.hce-folder {
+  width: 20px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: var(--border-radius-sm);
+  position: relative;
+  animation: fileStack 3s ease-in-out infinite;
+}
+
+.hce-folder:nth-child(2) { animation-delay: 0.5s; }
+.hce-folder:nth-child(3) { animation-delay: 1s; }
+
+.evaluation-visual {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+.eval-chart {
+  display: flex;
+  align-items: end;
+  gap: var(--spacing-xs);
+}
+
+.eval-bar {
+  width: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: var(--border-radius-sm);
+  animation: evalGrow 2s ease-in-out infinite;
+}
+
+.eval-bar:nth-child(1) { height: 20px; animation-delay: 0s; }
+.eval-bar:nth-child(2) { height: 35px; animation-delay: 0.3s; }
+.eval-bar:nth-child(3) { height: 45px; animation-delay: 0.6s; }
+.eval-bar:nth-child(4) { height: 30px; animation-delay: 0.9s; }
+
+.treatment-visual {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.treatment-node {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: treatmentPulse 2s ease-in-out infinite;
+}
+
+.treatment-connector {
+  width: 20px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  animation: connectorGlow 2s ease-in-out infinite;
+}
+
+.treatment-node:nth-child(odd) { animation-delay: 0.5s; }
+.treatment-connector:nth-child(even) { animation-delay: 1s; }
+
+.security-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.security-shield {
+  font-size: var(--text-3xl);
+  color: rgba(255, 255, 255, 0.4);
+  animation: shieldProtect 3s ease-in-out infinite;
+}
+
+.security-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: particleFloat 4s ease-in-out infinite;
+}
+
+.particle:nth-child(1) { top: 20%; left: 20%; animation-delay: 0s; }
+.particle:nth-child(2) { top: 30%; right: 20%; animation-delay: 1s; }
+.particle:nth-child(3) { bottom: 30%; left: 30%; animation-delay: 2s; }
+.particle:nth-child(4) { bottom: 20%; right: 30%; animation-delay: 3s; }
+
+@keyframes fileStack {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-5px) scale(1.1); }
+}
+
+@keyframes evalGrow {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.3); }
+}
+
+@keyframes treatmentPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.4); }
+}
+
+@keyframes connectorGlow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes shieldProtect {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.1) rotate(2deg); }
+  75% { transform: scale(1.1) rotate(-2deg); }
+}
+
+@keyframes particleFloat {
+  0%, 100% { opacity: 0.6; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-10px); }
+}
+
+/* Efecto en el botón CTA */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: var(--lazarus-white);
+  color: var(--lazarus-primary);
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  border-radius: var(--border-radius-2xl);
+  font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-lg);
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Parallax */
+.parallax-element {
+  transform: translateY(var(--scroll-parallax, 0));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #solucion {
+    padding: var(--spacing-xl) 0;
+    min-height: auto;
+  }
+
+  .solution-title {
+    font-size: var(--text-3xl);
+  }
+
+  .solution-subtitle {
+    font-size: var(--text-base);
+  }
+
+  .shape-brain {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .solution-title {
+    font-size: var(--text-2xl);
+  }
+
+  .solution-subtitle {
+    font-size: var(--text-xs);
+  }
+
+  .feature-title {
+    font-size: var(--text-lg);
+  }
+
+  .feature-description {
+    font-size: var(--text-sm);
+  }
+}
