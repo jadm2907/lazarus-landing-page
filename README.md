@@ -1,70 +1,72 @@
-Lazarus Landing Page
-Plataforma líder en gestión de salud mental y rehabilitación cognitiva. Este proyecto es una página web desarrollada con React y React Router para mostrar las características y visión de Lazarus Technology SpA.
-Características
+# Lazarus Landing Page
 
-Diseño responsivo: Adaptado para dispositivos móviles y de escritorio.
-Navegación dinámica: Incluye secciones como Inicio, Problema, Solución, Propuesta de Valor, Visión y Llamado a la Acción.
-Páginas legales: Términos y Condiciones, Política de Privacidad, Política de Seguridad y Aviso Legal, accesibles desde el footer.
-Efectos visuales: Animaciones de desplazamiento y paralaje para una experiencia interactiva.
+Plataforma líder en gestión de salud mental y rehabilitación cognitiva. Esta página web, desarrollada con React y React Router, presenta las características y visión de Lazarus Technology SpA.
 
-Requisitos previos
+## Características
+- **Diseño responsivo**: Optimizado para móviles y escritorio.
+- **Navegación dinámica**: Secciones como Inicio, Problema, Solución, Propuesta de Valor, Visión y Llamado a la Acción.
+- **Páginas legales**: Términos, Privacidad, Seguridad y Aviso Legal, accesibles desde el footer en nuevas pestañas.
+- **Efectos visuales**: Animaciones de desplazamiento y paralaje.
 
-Node.js (v16 o superior)
-npm (v8 o superior)
+## Requisitos
+- Node.js (v16+)
+- npm (v8+)
 
-Instalación
+## Instalación
+1. Clona el repositorio:
+   ```
+   git clone https://github.com/<tu-usuario>/lazarus-landing-page.git
+   ```
+2. Ingresa al directorio:
+   ```
+   cd lazarus-landing-page
+   ```
+3. Instala dependencias:
+   ```
+   npm install
+   ```
+4. Inicia el servidor:
+   ```
+   npm start
+   ```
+   Accede en `http://localhost:3000`.
 
-Clona el repositorio:git clone https://github.com/<tu-usuario>/lazarus-landing-page.git
-
-
-Navega al directorio del proyecto:cd lazarus-landing-page
-
-
-Instala las dependencias:npm install
-
-
-Inicia el servidor de desarrollo:npm start
-
-La aplicación estará disponible en http://localhost:3000.
-
-Estructura del proyecto
+## Estructura
+```
 lazarus-landing-page/
-├── public/                 # Archivos estáticos (favicon, index.html, etc.)
+├── public/                 # Archivos estáticos
 ├── src/
-│   ├── assets/            # Imágenes y otros recursos
-│   ├── components/        # Componentes React (HeroSection, Footer, etc.)
-│   ├── legal/             # Páginas legales (Términos, Privacidad, etc.)
-│   ├── styles/            # Archivos CSS para estilos
-│   ├── utils/             # Funciones de utilidad (scrollEffects.js, etc.)
-│   ├── App.js             # Componente principal con enrutamiento
-│   ├── index.js           # Punto de entrada de la aplicación
+│   ├── assets/            # Imágenes
+│   ├── components/        # Componentes React
+│   ├── legal/             # Páginas legales
+│   ├── styles/            # Estilos CSS
+│   ├── utils/             # Utilidades
+│   ├── App.js             # Componente principal
+│   ├── index.js           # Entrada de la app
 │   └── index.css          # Estilos globales
-├── package.json           # Dependencias y scripts
-└── README.md              # Documentación del proyecto
+├── package.json           # Dependencias
+└── README.md              # Documentación
+```
 
-Uso
+## Uso
+- **Navegación**: Usa los enlaces del footer para secciones o páginas legales.
+- **Desarrollo**: Edita componentes en `src/components` o estilos en `src/styles`.
+- **Despliegue**: Genera build con `npm run build`.
 
-Navegación: Usa los enlaces del footer para acceder a las secciones de la página principal o a las páginas legales, que se abren en nuevas pestañas.
-Desarrollo: Modifica los componentes en src/components o los estilos en src/styles para personalizar la aplicación.
-Despliegue: Usa npm run build para generar una versión optimizada en la carpeta build.
+## Dependencias
+- React: ^18.2.0
+- React Router DOM: ^6.14.0
 
-Dependencias principales
+## Contribución
+1. Haz un fork.
+2. Crea rama: `git checkout -b feature/nueva-funcionalidad`.
+3. Commitea cambios: `git commit -m "Agrega funcionalidad"`.
+4. Sube cambios: `git push origin feature/nueva-funcionalidad`.
+5. Abre un Pull Request.
 
-React: ^18.2.0
-React Router DOM: ^6.14.0
+## Contacto
+- Email: [joseandresdonoso290723@gmail.com](mailto:joseandresdonoso290723@gmail.com)
+- LinkedIn: [José Andrés Donoso](https://www.linkedin.com/in/joseandresdonosomolina)
 
-Contribución
-
-Haz un fork del repositorio.
-Crea una rama para tu funcionalidad: git checkout -b feature/nueva-funcionalidad.
-Realiza tus cambios y haz commit: git commit -m "Agrega nueva funcionalidad".
-Envía tus cambios: git push origin feature/nueva-funcionalidad.
-Abre un Pull Request en GitHub.
-
-Contacto
-
-Email: joseandresdonoso290723@gmail.com
-LinkedIn: José Andrés Donoso
-
-Licencia
+## Licencia
 © 2025 Lazarus Technology SpA. Todos los derechos reservados.
