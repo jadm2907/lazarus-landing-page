@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Lazarus",
+  "name": "Lazarus - Salud Mental y Rehabilitación Cognitiva",
+  "description": "Plataforma líder para la gestión de salud mental y rehabilitación cognitiva, optimizando la administración de pacientes y tratamientos.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -16,10 +17,23 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "logo144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "logo152.png",
+      "type": "image/png",
+      "sizes": "152x152"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#3A8D9F",
+  "background_color": "#FFFFFF",
+  "orientation": "portrait",
+  "lang": "es"
 }

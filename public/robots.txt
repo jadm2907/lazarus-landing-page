@@ -1,3 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /src/
+Disallow: *.test.js
+Allow: /
+
+# Sitemap
+Sitemap: https://lazarus-landing-page.com/sitemap.xml
