@@ -1,0 +1,95 @@
+{"level":"info","message":"Iniciando servidor backend","port":3000,"timestamp":"2025-09-11T18:34:43.329Z"}
+{"error":"Plugin 'mysql_native_password' is not loaded","level":"error","message":"Error al conectar a la base de datos","timestamp":"2025-09-11T18:34:43.362Z"}
+{"environment":"development","level":"info","message":"Iniciando aplicación backend...","nodeVersion":"v18.19.0","service":"lazarus-backend","timestamp":"2025-09-11 16:22:58"}
+{"database":"lazarus_landing","host":"localhost","level":"info","message":"Conexión a la base de datos establecida correctamente","service":"lazarus-backend","timestamp":"2025-09-11 16:22:58"}
+{"level":"info","message":"Base de datos sincronizada correctamente","service":"lazarus-backend","timestamp":"2025-09-11 16:22:58"}
+{"database":"lazarus_landing","environment":"development","level":"info","message":"Servidor backend iniciado correctamente","port":"3000","service":"lazarus-backend","timestamp":"2025-09-11 16:22:58"}
+2025-09-11 16:27:26 [INFO]: Iniciando aplicación backend... {"nodeVersion":"v18.19.0","environment":"development"}
+2025-09-11 16:27:26 [INFO]: Conexión a la base de datos establecida correctamente {"database":"lazarus_landing","host":"localhost"}
+2025-09-11 16:27:26 [INFO]: Base de datos sincronizada correctamente
+2025-09-11 16:27:26 [INFO]: Servidor backend iniciado correctamente {"port":"3000","environment":"development","database":"lazarus_landing"}
+2025-09-11 16:28:26 [INFO]: Iniciando aplicación backend... {"nodeVersion":"v18.19.0","environment":"development"}
+2025-09-11 16:28:27 [INFO]: Conexión a la base de datos establecida correctamente {"database":"lazarus_landing","host":"localhost"}
+2025-09-11 16:28:27 [INFO]: Base de datos sincronizada correctamente
+2025-09-11 16:28:27 [INFO]: Servidor backend iniciado correctamente {"port":"3000","environment":"development","database":"lazarus_landing"}
+2025-09-11 16:29:40 [INFO]: Iniciando aplicación backend... {"nodeVersion":"v18.19.0","environment":"development"}
+2025-09-11 16:29:40 [INFO]: Modelo Lead definido correctamente
+2025-09-11 16:29:40 [INFO]: Conexión a la base de datos establecida correctamente {"database":"lazarus_landing","host":"localhost"}
+2025-09-11 16:29:41 [INFO]: Base de datos sincronizada correctamente
+2025-09-11 16:29:41 [INFO]: Servidor backend iniciado correctamente {"port":"3000","environment":"development","database":"lazarus_landing"}
+2025-09-11 16:34:21 [WARN]: Ruta no encontrada {"path":"/","method":"GET"}
+2025-09-11 16:34:21 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:21 +0000] "GET / HTTP/1.1" 404 62 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:21 [WARN]: Ruta no encontrada {"path":"/.well-known/appspecific/com.chrome.devtools.json","method":"GET"}
+2025-09-11 16:34:21 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:21 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 110 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:21 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:34:21 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:21 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:21 [WARN]: Ruta no encontrada {"path":"/static/js/bundle.js.map","method":"GET"}
+2025-09-11 16:34:21 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:21 +0000] "GET /static/js/bundle.js.map HTTP/1.1" 404 85 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:21 [WARN]: Ruta no encontrada {"path":"/manifest.json","method":"GET"}
+2025-09-11 16:34:21 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:21 +0000] "GET /manifest.json HTTP/1.1" 404 75 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:22 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:34:22 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:22 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:23 [WARN]: Ruta no encontrada {"path":"/service-worker.js","method":"GET"}
+2025-09-11 16:34:23 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:23 +0000] "GET /service-worker.js HTTP/1.1" 404 79 "http://localhost:3000/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:24 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:34:24 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:24 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:28 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:34:28 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:28 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:35 [INFO]: [LeadController] Solicitud para crear lead recibida {"body":{"name":"prueba","email":"correo@correo.cl","message":"Estoy interesado en ser un early adopter de Lazarus","company_name":"","phone":"","type_professional":"other","web":"","isCompany":false,"region_id":null,"type_professional_id":7}}
+2025-09-11 16:34:35 [INFO]: [LeadService] Creando lead en servicio {"data":{"name":"prueba","email":"correo@correo.cl","message":"Estoy interesado en ser un early adopter de Lazarus","company_name":"","phone":"","type_professional":"other","web":"","isCompany":false,"region_id":null,"type_professional_id":7}}
+2025-09-11 16:34:36 [INFO]: [LeadService] Lead creado en base de datos {"leadId":1}
+2025-09-11 16:34:36 [INFO]: [LeadController] Lead creado exitosamente {"leadId":1}
+2025-09-11 16:34:36 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:36 +0000] "POST /api/leads HTTP/1.1" 201 265 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:36 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:34:36 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:36 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:34:52 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:34:52 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:34:52 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:35:25 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:35:25 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:35:25 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:35:53 [WARN]: Ruta no encontrada {"path":"/","method":"GET"}
+2025-09-11 16:35:53 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:35:53 +0000] "GET / HTTP/1.1" 404 62 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:35:53 [WARN]: Ruta no encontrada {"path":"/.well-known/appspecific/com.chrome.devtools.json","method":"GET"}
+2025-09-11 16:35:53 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:35:53 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 110 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:35:53 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:35:53 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:35:53 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:35:53 [WARN]: Ruta no encontrada {"path":"/static/js/bundle.js.map","method":"GET"}
+2025-09-11 16:35:53 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:35:53 +0000] "GET /static/js/bundle.js.map HTTP/1.1" 404 85 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:35:53 [WARN]: Ruta no encontrada {"path":"/manifest.json","method":"GET"}
+2025-09-11 16:35:53 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:35:53 +0000] "GET /manifest.json HTTP/1.1" 404 75 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:35:54 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:35:54 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:35:54 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:35:55 [WARN]: Ruta no encontrada {"path":"/service-worker.js","method":"GET"}
+2025-09-11 16:35:55 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:35:55 +0000] "GET /service-worker.js HTTP/1.1" 404 79 "http://localhost:3000/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:35:56 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:35:56 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:35:56 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:36:01 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:36:01 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:36:01 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:36:09 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:36:09 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:36:09 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:36:25 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:36:25 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:36:25 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:36:57 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:36:57 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:36:57 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:37:21 [INFO]: [LeadController] Solicitud para crear lead recibida {"body":{"name":"otra prueba","email":"correo@correo.cl","message":"Estoy interesado en ser un early adopter de Lazarus","company_name":"centro de prueba","phone":"+56986867","type_professional":"neuropsychologist","web":"https://sitio.cl","isCompany":true,"region_id":"11","type_professional_id":2}}
+2025-09-11 16:37:21 [INFO]: [LeadService] Creando lead en servicio {"data":{"name":"otra prueba","email":"correo@correo.cl","message":"Estoy interesado en ser un early adopter de Lazarus","company_name":"centro de prueba","phone":"+56986867","type_professional":"neuropsychologist","web":"https://sitio.cl","isCompany":true,"region_id":"11","type_professional_id":2}}
+2025-09-11 16:37:21 [INFO]: [LeadService] Lead creado en base de datos {"leadId":2}
+2025-09-11 16:37:21 [INFO]: [LeadController] Lead creado exitosamente {"leadId":2}
+2025-09-11 16:37:21 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:37:21 +0000] "POST /api/leads HTTP/1.1" 201 279 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:38:01 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:38:01 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:38:01 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:40:10 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:40:10 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:40:10 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:44:27 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:44:27 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:44:27 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:53:00 [WARN]: Ruta no encontrada {"path":"/ws","method":"GET"}
+2025-09-11 16:53:00 [INFO]: [HTTP] ::1 - - [11/Sep/2025:19:53:00 +0000] "GET /ws HTTP/1.1" 404 64 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-09-11 16:59:35 [INFO]: [LeadController] Solicitud para crear lead recibida {"body":{"name":"otro","email":"miguelkali.32@gmail.com","message":"Estoy interesado en ser un early adopter de Lazarus","company_name":"","phone":"","type_professional":"rehabilitation_center","web":"","isCompany":false,"region_id":null,"type_professional_id":3}}
+2025-09-11 16:59:35 [INFO]: [LeadService] Creando lead en servicio {"data":{"name":"otro","email":"miguelkali.32@gmail.com","message":"Estoy interesado en ser un early adopter de Lazarus","company_name":"","phone":"","type_professional":"rehabilitation_center","web":"","isCompany":false,"region_id":null,"type_professional_id":3}}
+2025-09-11 16:59:35 [INFO]: [LeadService] Lead creado en base de datos {"leadId":3}
+2025-09-11 16:59:35 [INFO]: [LeadController] Lead creado exitosamente {"leadId":3}
+2025-09-11 16:59:35 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [11/Sep/2025:19:59:35 +0000] "POST /api/leads HTTP/1.1" 201 270 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-11 17:01:44 [INFO]: [LeadController] Solicitud para crear lead recibida {"body":{"name":"daledale","email":"elmail@mail.com","message":"Estoy interesado en ser un early adopter de Lazarus","company_name":"empresa de prueba","phone":"551155115","type_professional":"psychiatrist","web":"https://laweb.com","isCompany":true,"region_id":"12","type_professional_id":6}}
+2025-09-11 17:01:44 [INFO]: [LeadService] Creando lead en servicio {"data":{"name":"daledale","email":"elmail@mail.com","message":"Estoy interesado en ser un early adopter de Lazarus","company_name":"empresa de prueba","phone":"551155115","type_professional":"psychiatrist","web":"https://laweb.com","isCompany":true,"region_id":"12","type_professional_id":6}}
+2025-09-11 17:01:44 [INFO]: [LeadService] Lead creado en base de datos {"leadId":4}
+2025-09-11 17:01:44 [INFO]: [LeadController] Lead creado exitosamente {"leadId":4}
+2025-09-11 17:01:44 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [11/Sep/2025:20:01:44 +0000] "POST /api/leads HTTP/1.1" 201 275 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
