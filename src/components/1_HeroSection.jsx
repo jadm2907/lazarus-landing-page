@@ -5,10 +5,12 @@ import BrainBackground from '../utils/BrainBackground';
 import '../styles/HeroSection.css';
 import '../styles/BrainBackground.css';
 import { initScrollReveal, initParallax } from '../utils/scrollEffects';
+import ContactForm from './ContactForm';
 
 const HeroSection = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(false);
   const heroRef = useRef(null);
 
   useEffect(() => {
@@ -33,6 +35,10 @@ const HeroSection = () => {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
     }
+  };
+
+  const toggleForm = () => {
+    setIsFormOpen(!isFormOpen);
   };
 
   return (
@@ -67,9 +73,44 @@ const HeroSection = () => {
           <h1 className="hero-title">La Plataforma Todo en Uno para la Gestión de la Salud Mental</h1>
           <p className="hero-subtitle">Una solución digital centralizada para optimizar la administración de pacientes, evaluaciones y tratamientos.</p>
           <div className="hero-cta">
-            <button className="cta-button">Descubre cómo</button>
+            <button className="cta-button" onClick={toggleForm}>Descubre cómo</button>
           </div>
         </div>
+        {isFormOpen && (
+          <div
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(0, 0, 0, 0.6)',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              zIndex: 1000,
+            }}
+          >
+            <div
+              style={{
+                background: 'var(--lazarus-dark)',
+                padding: 'var(--spacing-lg)',
+                borderRadius: '8px',
+                maxWidth: '500px',
+                width: '90%',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
+              }}
+            >
+              <h2 style={{ color: 'var(--lazarus-white)', textAlign: 'center', marginBottom: 'var(--spacing-md)' }}>
+                Contáctanos
+              </h2>
+              <ContactForm
+                initialMessage="Estoy interesado en ser un early adopter de Lazarus"
+                onClose={toggleForm}
+              />
+            </div>
+          </div>
+        )}
       </section>
     </>
   );

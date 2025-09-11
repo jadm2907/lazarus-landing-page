@@ -7,7 +7,15 @@ module.exports = {
   ignoreURLParametersMatching: [/^utm_/, /^fbclid$/],
   runtimeCaching: [
     {
-      urlPattern: /\.(?:png|jpg|jpeg|svg|ico)$/,
+    urlPattern: /^https:\/\/lazarus-landing-page\.com\/(terminos|privacidad|seguridad|aviso-legal)/,
+    handler: 'NetworkFirst',
+      options: {
+        cacheName: 'lazarus-legal-pages',
+        expiration: { maxEntries: 10, maxAgeSeconds: 30 * 24 * 60 * 60 },
+      },
+    },
+      {
+        urlPattern: /\.(?:png|jpg|jpeg|svg|ico)$/,
       handler: 'CacheFirst',
       options: {
         cacheName: 'lazarus-images',

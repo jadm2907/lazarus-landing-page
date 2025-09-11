@@ -1,75 +1,417 @@
 .contact-form-container {
   margin-top: var(--spacing-md);
-  max-width: 400px;
+  max-width: 520px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: var(--border-radius-2xl);
+  padding: var(--spacing-2xl);
+  box-shadow: 0 20px 40px rgba(43, 88, 118, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  animation: slideUp 0.6s ease-out;
+}
+
+/* Efecto de brillo sutil en el fondo */
+.contact-form-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.03), transparent);
+  animation: shimmer 3s infinite;
+  pointer-events: none;
+}
+
+.contact-form-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: var(--gradient-primary);
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Botón de cerrar mejorado */
+.contact-form-container .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(43, 88, 118, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: var(--lazarus-primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.contact-form-container .close-button:hover {
+  background: rgba(43, 88, 118, 0.2);
+  transform: rotate(90deg) scale(1.1);
+  color: var(--lazarus-secondary);
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
+  position: relative;
+  z-index: 2;
+}
+
+/* Título del formulario */
+.form-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--lazarus-primary);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .form-group label {
   font-family: var(--font-heading);
-  font-size: var(--text-md);
-  color: var(--lazarus-white);
-  margin-bottom: var(--spacing-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--lazarus-primary);
+  margin-bottom: var(--spacing-xs);
+  transition: color var(--transition-normal);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
+/* Inputs y textareas mejorados */
 .form-group input,
-.form-group textarea {
-  padding: var(--spacing-sm);
-  font-size: var(--text-sm);
-  color: var(--lazarus-white);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid var(--lazarus-accent-1);
-  border-radius: 4px;
+.form-group textarea,
+.form-group select {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--text-base);
+  color: var(--lazarus-dark);
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(43, 88, 118, 0.1);
+  border-radius: var(--border-radius-lg);
   transition: all var(--transition-normal);
+  backdrop-filter: blur(10px);
+  font-family: var(--font-body);
+  position: relative;
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group select:focus {
   outline: none;
-  border-color: var(--lazarus-white);
-  box-shadow: 0 0 8px rgba(58, 141, 159, 0.3);
+  border-color: var(--lazarus-secondary);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0 4px rgba(75, 108, 183, 0.1), 0 8px 24px rgba(43, 88, 118, 0.15);
+  transform: translateY(-2px);
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group select:focus + label {
+  color: var(--lazarus-secondary);
+}
+
+/* Efecto de onda en inputs */
+.form-group::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: all var(--transition-normal);
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+
+.form-group:focus-within::after {
+  width: 100%;
 }
 
 .form-group textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 120px;
+  line-height: 1.6;
 }
 
-.form-submit {
-  background: var(--gradient-primary);
-  color: var(--lazarus-white);
-  padding: var(--spacing-sm) var(--spacing-lg);
-  border: none;
-  border-radius: 4px;
-  font-size: var(--text-md);
-  font-weight: var(--font-semibold);
+/* Select personalizado */
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232b5876' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-md) center;
+  background-size: 20px;
+  padding-right: calc(var(--spacing-lg) + 30px);
+}
+
+/* Checkbox mejorado */
+.form-group label:has(input[type="checkbox"]) {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-md);
   cursor: pointer;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: var(--font-normal);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(43, 88, 118, 0.1);
   transition: all var(--transition-normal);
 }
 
-.form-submit:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.form-group label:has(input[type="checkbox"]):hover {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(43, 88, 118, 0.2);
 }
 
+.form-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid var(--lazarus-primary);
+}
+
+.form-group input[type="checkbox"]:checked {
+  background: var(--gradient-primary);
+  border-color: var(--lazarus-secondary);
+}
+
+.form-group input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Campos condicionales con animación */
+.conditional-fields {
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+}
+
+.conditional-fields.visible {
+  opacity: 1;
+  max-height: 400px;
+  margin-top: var(--spacing-md);
+}
+
+.conditional-fields .form-group {
+  animation: slideInRight 0.3s ease-out;
+  animation-fill-mode: both;
+}
+
+.conditional-fields .form-group:nth-child(1) { animation-delay: 0.1s; }
+.conditional-fields .form-group:nth-child(2) { animation-delay: 0.2s; }
+.conditional-fields .form-group:nth-child(3) { animation-delay: 0.3s; }
+
+/* Botón de envío mejorado */
+.form-submit {
+  background: var(--gradient-primary);
+  color: var(--lazarus-white);
+  padding: var(--spacing-md) var(--spacing-2xl);
+  border: none;
+  border-radius: var(--border-radius-lg);
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  font-family: var(--font-heading);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: var(--spacing-lg);
+  box-shadow: 0 8px 24px rgba(43, 88, 118, 0.3);
+}
+
+.form-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(43, 88, 118, 0.4);
+}
+
+.form-submit:active {
+  transform: translateY(-1px);
+}
+
+.form-submit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.form-submit:hover::before {
+  left: 100%;
+}
+
+/* Estado de carga del botón */
+.form-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-submit.loading {
+  position: relative;
+  color: transparent;
+}
+
+.form-submit.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid transparent;
+  border-top-color: var(--lazarus-white);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Mensaje de estado mejorado */
 .form-status {
   font-size: var(--text-sm);
-  color: var(--lazarus-medium);
-  margin-top: var(--spacing-sm);
+  font-weight: var(--font-medium);
+  margin-top: var(--spacing-md);
   text-align: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-normal);
+  animation: fadeIn 0.3s ease-out;
 }
 
+.form-status.success {
+  color: var(--lazarus-success);
+  background: rgba(42, 157, 143, 0.1);
+  border: 1px solid rgba(42, 157, 143, 0.2);
+}
+
+.form-status.error {
+  color: var(--lazarus-danger);
+  background: rgba(231, 111, 81, 0.1);
+  border: 1px solid rgba(231, 111, 81, 0.2);
+}
+
+.form-status.loading {
+  color: var(--lazarus-info);
+  background: rgba(58, 141, 159, 0.1);
+  border: 1px solid rgba(58, 141, 159, 0.2);
+}
+
+/* Animaciones */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive mejorado */
 @media (max-width: 768px) {
   .contact-form-container {
-    max-width: 100%;
+    max-width: 95%;
+    margin: var(--spacing-md) auto;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-xl);
+  }
+  
+  .form-title {
+    font-size: var(--text-xl);
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  
+  .form-submit {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--text-base);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-container {
+    margin: var(--spacing-sm) auto;
+    padding: var(--spacing-md);
+  }
+  
+  .conditional-fields.visible {
+    max-height: 500px;
   }
 }
