@@ -76,42 +76,13 @@ const HeroSection = () => {
             <button className="cta-button" onClick={toggleForm}>Descubre cómo</button>
           </div>
         </div>
-        {isFormOpen && (
-          <div
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              background: 'rgba(0, 0, 0, 0.6)',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              zIndex: 1000,
-            }}
-          >
-            <div
-              style={{
-                background: 'var(--lazarus-dark)',
-                padding: 'var(--spacing-lg)',
-                borderRadius: '8px',
-                maxWidth: '500px',
-                width: '90%',
-                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
-              }}
-            >
-              <h2 style={{ color: 'var(--lazarus-white)', textAlign: 'center', marginBottom: 'var(--spacing-md)' }}>
-                Contáctanos
-              </h2>
-              <ContactForm
-                initialMessage="Estoy interesado en ser un early adopter de Lazarus"
-                onClose={toggleForm}
-              />
-            </div>
-          </div>
-        )}
       </section>
+      {isFormOpen && (
+        <ContactForm
+          initialMessage="Estoy interesado en ser un early adopter de Lazarus"
+          onClose={toggleForm}
+        />
+      )}
     </>
   );
 };
