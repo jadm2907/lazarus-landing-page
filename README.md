@@ -5,6 +5,8 @@ Plataforma líder en gestión de salud mental y rehabilitación cognitiva. Esta 
 ## Características
 🚀 Características
 Frontend (React)
+
+
 ✅ Diseño responsive y moderno
 
 ✅ Formulario de contacto funcional
@@ -18,6 +20,8 @@ Frontend (React)
 ✅ Service Worker para funcionalidad offline
 
 Backend (Node.js + Express + MySQL)
+
+
 ✅ API RESTful para gestión de leads
 
 ✅ Base de datos MySQL con Sequelize ORM
