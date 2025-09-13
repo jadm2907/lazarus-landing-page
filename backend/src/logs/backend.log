@@ -434,3 +434,43 @@
 2025-09-13 13:00:58 [INFO]: [LeadService] Lead creado en base de datos {"leadId":5}
 2025-09-13 13:00:58 [INFO]: [LeadController] Lead creado exitosamente {"leadId":5}
 2025-09-13 13:00:58 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:00:58 +0000] "POST /leads HTTP/1.1" 201 344 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:13:21 [INFO]: [LeadController] Solicitud para obtener regiones recibida
+2025-09-13 13:13:21 [INFO]: [LeadService] Obteniendo lista de regiones
+2025-09-13 13:13:21 [INFO]: [LeadController] Solicitud para obtener regiones recibida
+2025-09-13 13:13:21 [INFO]: [LeadService] Obteniendo lista de regiones
+2025-09-13 13:13:21 [INFO]: [LeadController] Solicitud para obtener tipos de profesionales recibida
+2025-09-13 13:13:21 [INFO]: [LeadService] Obteniendo lista de tipos de profesionales
+2025-09-13 13:13:21 [INFO]: [LeadController] Solicitud para obtener tipos de profesionales recibida
+2025-09-13 13:13:21 [INFO]: [LeadService] Obteniendo lista de tipos de profesionales
+2025-09-13 13:13:21 [INFO]: [LeadService] Regiones obtenidas exitosamente {"count":16}
+2025-09-13 13:13:21 [INFO]: [LeadController] Regiones enviadas exitosamente {"count":16}
+2025-09-13 13:13:21 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:13:21 +0000] "GET /leads/regions HTTP/1.1" 304 - "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:13:21 [INFO]: [LeadService] Regiones obtenidas exitosamente {"count":16}
+2025-09-13 13:13:21 [INFO]: [LeadController] Regiones enviadas exitosamente {"count":16}
+2025-09-13 13:13:21 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:13:21 +0000] "GET /leads/regions HTTP/1.1" 200 1182 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:13:21 [INFO]: [LeadService] Tipos de profesionales obtenidos exitosamente {"count":7}
+2025-09-13 13:13:21 [INFO]: [LeadController] Tipos de profesionales enviados exitosamente {"count":7}
+2025-09-13 13:13:21 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:13:21 +0000] "GET /leads/types HTTP/1.1" 200 1060 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:13:21 [INFO]: [LeadService] Tipos de profesionales obtenidos exitosamente {"count":7}
+2025-09-13 13:13:21 [INFO]: [LeadController] Tipos de profesionales enviados exitosamente {"count":7}
+2025-09-13 13:13:21 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:13:21 +0000] "GET /leads/types HTTP/1.1" 304 - "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:21:45 [INFO]: [LeadController] Solicitud para obtener tipos de profesionales recibida
+2025-09-13 13:21:45 [INFO]: [LeadService] Obteniendo lista de tipos de profesionales
+2025-09-13 13:21:45 [INFO]: [LeadController] Solicitud para obtener tipos de profesionales recibida
+2025-09-13 13:21:45 [INFO]: [LeadService] Obteniendo lista de tipos de profesionales
+2025-09-13 13:21:45 [INFO]: [LeadController] Solicitud para obtener regiones recibida
+2025-09-13 13:21:45 [INFO]: [LeadService] Obteniendo lista de regiones
+2025-09-13 13:21:45 [INFO]: [LeadController] Solicitud para obtener regiones recibida
+2025-09-13 13:21:45 [INFO]: [LeadService] Obteniendo lista de regiones
+2025-09-13 13:21:45 [INFO]: [LeadService] Tipos de profesionales obtenidos exitosamente {"count":7}
+2025-09-13 13:21:45 [INFO]: [LeadController] Tipos de profesionales enviados exitosamente {"count":7}
+2025-09-13 13:21:45 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:21:45 +0000] "GET /leads/types HTTP/1.1" 304 - "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:21:45 [INFO]: [LeadService] Tipos de profesionales obtenidos exitosamente {"count":7}
+2025-09-13 13:21:45 [INFO]: [LeadController] Tipos de profesionales enviados exitosamente {"count":7}
+2025-09-13 13:21:45 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:21:45 +0000] "GET /leads/types HTTP/1.1" 200 1060 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:21:45 [INFO]: [LeadService] Regiones obtenidas exitosamente {"count":16}
+2025-09-13 13:21:45 [INFO]: [LeadController] Regiones enviadas exitosamente {"count":16}
+2025-09-13 13:21:45 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:21:45 +0000] "GET /leads/regions HTTP/1.1" 200 1182 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:21:45 [INFO]: [LeadService] Regiones obtenidas exitosamente {"count":16}
+2025-09-13 13:21:45 [INFO]: [LeadController] Regiones enviadas exitosamente {"count":16}
+2025-09-13 13:21:45 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:21:45 +0000] "GET /leads/regions HTTP/1.1" 304 - "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
