@@ -204,3 +204,233 @@
 2025-09-13 11:59:16 [INFO]: [HTTP] ::1 - - [13/Sep/2025:14:59:16 +0000] "GET /leads/ HTTP/1.1" 404 68 "-" "bruno-runtime/2.10.1"
 2025-09-13 11:59:20 [WARN]: Ruta no encontrada {"path":"/leads","method":"GET"}
 2025-09-13 11:59:20 [INFO]: [HTTP] ::1 - - [13/Sep/2025:14:59:20 +0000] "GET /leads HTTP/1.1" 404 67 "-" "bruno-runtime/2.10.1"
+2025-09-13 12:26:19 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:26:19 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:19 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:19 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:26:19 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:19 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:19 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:26:19 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:19 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:19 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:26:19 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:19 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:29 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:26:29 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:29 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:29 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:26:29 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:29 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:29 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:26:29 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:29 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:29 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:26:29 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:29 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:40 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:26:40 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:40 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:40 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:26:40 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:40 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:40 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:26:40 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:40 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:26:40 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:26:40 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:26:40 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:11 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:11 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:11 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:11 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:11 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:11 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:11 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:11 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:11 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:11 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:11 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:11 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:17 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:17 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:17 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:17 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:17 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:17 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:17 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:17 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:17 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:17 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:17 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:17 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:32 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:32 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:32 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:32 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:32 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:32 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:32 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:32 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:32 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:32 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:32 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:32 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:45 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:45 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:45 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:45 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:45 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:45 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:45 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:45 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:45 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:45 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:45 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:45 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:53 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:53 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:53 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:53 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:53 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:53 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:53 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:27:53 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:53 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:27:53 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:27:53 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:27:53 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:00 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:28:00 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:00 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:00 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:28:00 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:00 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:00 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:28:00 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:00 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:00 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:28:00 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:00 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:34 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:28:34 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:34 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:34 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:28:34 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:34 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:34 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:28:34 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:34 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:34 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:28:34 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:34 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:36 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:28:36 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:36 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:36 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:28:36 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:36 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:36 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:28:36 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:36 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:28:36 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:28:36 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:28:36 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:45:44 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:45:44 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:45:44 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:45:44 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:45:44 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:45:44 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:45:44 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:45:44 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:45:44 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:45:44 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:45:44 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:45:44 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:45:49 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:45:49 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:45:49 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:45:49 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:45:49 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:45:49 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:45:49 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:45:49 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:45:49 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:45:49 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:45:49 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:45:49 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:46:21 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:46:21 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:46:21 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:46:21 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:46:21 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:46:21 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:46:21 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:46:21 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:46:21 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:46:21 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:46:21 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:46:21 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:46:23 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:46:23 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:46:23 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:46:23 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:46:23 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:46:23 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:46:23 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:46:23 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:46:23 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:46:23 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:46:23 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:46:23 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:18 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:50:18 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:18 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:18 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:50:18 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:18 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:32 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:50:32 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:32 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:32 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:50:32 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:32 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:32 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:50:32 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:32 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:32 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:50:32 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:32 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:42 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:50:42 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:42 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:42 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:50:42 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:42 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:42 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:50:42 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:42 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:42 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:50:42 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:42 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:56 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:50:56 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:56 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:56 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:50:56 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:56 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:56 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:50:56 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:56 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:56 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:50:56 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:56 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:59 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:50:59 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:59 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:59 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:50:59 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:59 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:59 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:50:59 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:59 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:50:59 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:50:59 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:50:59 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:52:01 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:52:01 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:52:01 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:52:01 [WARN]: Ruta no encontrada {"path":"/api/leads/regions","method":"GET"}
+2025-09-13 12:52:01 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:52:01 +0000] "GET /api/leads/regions HTTP/1.1" 404 79 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:52:01 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:52:01 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:52:01 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:52:01 [WARN]: Ruta no encontrada {"path":"/api/leads/types","method":"GET"}
+2025-09-13 12:52:01 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:52:01 +0000] "GET /api/leads/types HTTP/1.1" 404 77 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:53:09 [INFO]: [LeadController] Solicitud para obtener regiones recibida
+2025-09-13 12:53:09 [INFO]: [LeadService] Obteniendo lista de regiones
+2025-09-13 12:53:09 [INFO]: [LeadService] Regiones obtenidas exitosamente {"count":16}
+2025-09-13 12:53:09 [INFO]: [LeadController] Regiones enviadas exitosamente {"count":16}
+2025-09-13 12:53:09 [INFO]: [HTTP] ::1 - - [13/Sep/2025:15:53:09 +0000] "GET /leads/regions HTTP/1.1" 200 1182 "-" "bruno-runtime/2.10.1"
+2025-09-13 12:53:16 [INFO]: [LeadController] Solicitud para obtener tipos de profesionales recibida
+2025-09-13 12:53:16 [INFO]: [LeadService] Obteniendo lista de tipos de profesionales
+2025-09-13 12:53:16 [INFO]: [LeadService] Tipos de profesionales obtenidos exitosamente {"count":7}
+2025-09-13 12:53:16 [INFO]: [LeadController] Tipos de profesionales enviados exitosamente {"count":7}
+2025-09-13 12:53:16 [INFO]: [HTTP] ::1 - - [13/Sep/2025:15:53:16 +0000] "GET /leads/types HTTP/1.1" 200 1060 "-" "bruno-runtime/2.10.1"
+2025-09-13 12:57:13 [INFO]: [LeadController] Solicitud para obtener regiones recibida
+2025-09-13 12:57:13 [INFO]: [LeadService] Obteniendo lista de regiones
+2025-09-13 12:57:13 [INFO]: [LeadController] Solicitud para obtener tipos de profesionales recibida
+2025-09-13 12:57:13 [INFO]: [LeadService] Obteniendo lista de tipos de profesionales
+2025-09-13 12:57:13 [INFO]: [LeadController] Solicitud para obtener regiones recibida
+2025-09-13 12:57:13 [INFO]: [LeadService] Obteniendo lista de regiones
+2025-09-13 12:57:13 [INFO]: [LeadController] Solicitud para obtener tipos de profesionales recibida
+2025-09-13 12:57:13 [INFO]: [LeadService] Obteniendo lista de tipos de profesionales
+2025-09-13 12:57:13 [INFO]: [LeadService] Regiones obtenidas exitosamente {"count":16}
+2025-09-13 12:57:13 [INFO]: [LeadController] Regiones enviadas exitosamente {"count":16}
+2025-09-13 12:57:13 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:57:13 +0000] "GET /leads/regions HTTP/1.1" 200 1182 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:57:13 [INFO]: [LeadService] Tipos de profesionales obtenidos exitosamente {"count":7}
+2025-09-13 12:57:13 [INFO]: [LeadController] Tipos de profesionales enviados exitosamente {"count":7}
+2025-09-13 12:57:13 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:57:13 +0000] "GET /leads/types HTTP/1.1" 200 1060 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:57:13 [INFO]: [LeadService] Regiones obtenidas exitosamente {"count":16}
+2025-09-13 12:57:13 [INFO]: [LeadController] Regiones enviadas exitosamente {"count":16}
+2025-09-13 12:57:13 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:57:13 +0000] "GET /leads/regions HTTP/1.1" 200 1182 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:57:13 [INFO]: [LeadService] Tipos de profesionales obtenidos exitosamente {"count":7}
+2025-09-13 12:57:13 [INFO]: [LeadController] Tipos de profesionales enviados exitosamente {"count":7}
+2025-09-13 12:57:13 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:57:13 +0000] "GET /leads/types HTTP/1.1" 200 1060 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:58:41 [INFO]: [LeadController] Solicitud para crear lead recibida {"body":{"name":"jose","email":"jose@correo.com","phone":"12345678","is_company":false,"type_professional_id":"7","region_id":"1","message":"alojaaa"}}
+2025-09-13 12:58:41 [INFO]: [LeadService] Creando lead en servicio {"data":{"name":"jose","email":"jose@correo.com","phone":"12345678","is_company":false,"type_professional_id":"7","region_id":"1","message":"alojaaa"}}
+2025-09-13 12:58:41 [INFO]: [LeadService] Lead creado en base de datos {"leadId":4}
+2025-09-13 12:58:41 [INFO]: [LeadController] Lead creado exitosamente {"leadId":4}
+2025-09-13 12:58:41 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:58:41 +0000] "POST /leads HTTP/1.1" 201 290 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:59:11 [INFO]: [LeadController] Solicitud para obtener regiones recibida
+2025-09-13 12:59:11 [INFO]: [LeadService] Obteniendo lista de regiones
+2025-09-13 12:59:11 [INFO]: [LeadController] Solicitud para obtener regiones recibida
+2025-09-13 12:59:11 [INFO]: [LeadService] Obteniendo lista de regiones
+2025-09-13 12:59:11 [INFO]: [LeadController] Solicitud para obtener tipos de profesionales recibida
+2025-09-13 12:59:11 [INFO]: [LeadService] Obteniendo lista de tipos de profesionales
+2025-09-13 12:59:11 [INFO]: [LeadController] Solicitud para obtener tipos de profesionales recibida
+2025-09-13 12:59:11 [INFO]: [LeadService] Obteniendo lista de tipos de profesionales
+2025-09-13 12:59:11 [INFO]: [LeadService] Regiones obtenidas exitosamente {"count":16}
+2025-09-13 12:59:11 [INFO]: [LeadController] Regiones enviadas exitosamente {"count":16}
+2025-09-13 12:59:11 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:59:11 +0000] "GET /leads/regions HTTP/1.1" 304 - "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:59:11 [INFO]: [LeadService] Regiones obtenidas exitosamente {"count":16}
+2025-09-13 12:59:11 [INFO]: [LeadController] Regiones enviadas exitosamente {"count":16}
+2025-09-13 12:59:11 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:59:11 +0000] "GET /leads/regions HTTP/1.1" 200 1182 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:59:11 [INFO]: [LeadService] Tipos de profesionales obtenidos exitosamente {"count":7}
+2025-09-13 12:59:11 [INFO]: [LeadController] Tipos de profesionales enviados exitosamente {"count":7}
+2025-09-13 12:59:11 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:59:11 +0000] "GET /leads/types HTTP/1.1" 200 1060 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:59:11 [INFO]: [LeadService] Tipos de profesionales obtenidos exitosamente {"count":7}
+2025-09-13 12:59:11 [INFO]: [LeadController] Tipos de profesionales enviados exitosamente {"count":7}
+2025-09-13 12:59:11 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:59:11 +0000] "GET /leads/types HTTP/1.1" 304 - "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 12:59:40 [ERROR]: [LeadController] Errores de validación {"errors":[{"type":"field","value":"","msg":"El campo web debe ser una URL válida","path":"web","location":"body"}]}
+2025-09-13 12:59:40 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:15:59:40 +0000] "POST /leads HTTP/1.1" 400 168 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:00:44 [ERROR]: [LeadController] Errores de validación {"errors":[{"type":"field","value":"http:www.web.com","msg":"El campo web debe ser una URL válida","path":"web","location":"body"}]}
+2025-09-13 13:00:44 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:00:44 +0000] "POST /leads HTTP/1.1" 400 184 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:00:47 [ERROR]: [LeadController] Errores de validación {"errors":[{"type":"field","value":"http:www.web.com","msg":"El campo web debe ser una URL válida","path":"web","location":"body"}]}
+2025-09-13 13:00:47 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:00:47 +0000] "POST /leads HTTP/1.1" 400 184 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+2025-09-13 13:00:58 [INFO]: [LeadController] Solicitud para crear lead recibida {"body":{"name":"andres","email":"jose@correo.com","phone":"222222","company_name":"laempresa","web":"https://www.web.com","is_company":true,"type_professional_id":"5","region_id":"11","message":"oleeee"}}
+2025-09-13 13:00:58 [INFO]: [LeadService] Creando lead en servicio {"data":{"name":"andres","email":"jose@correo.com","phone":"222222","company_name":"laempresa","web":"https://www.web.com","is_company":true,"type_professional_id":"5","region_id":"11","message":"oleeee"}}
+2025-09-13 13:00:58 [INFO]: [LeadService] Lead creado en base de datos {"leadId":5}
+2025-09-13 13:00:58 [INFO]: [LeadController] Lead creado exitosamente {"leadId":5}
+2025-09-13 13:00:58 [INFO]: [HTTP] ::ffff:127.0.0.1 - - [13/Sep/2025:16:00:58 +0000] "POST /leads HTTP/1.1" 201 344 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
