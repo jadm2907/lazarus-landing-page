@@ -14,7 +14,7 @@ const LegalNotice = () => {
           <p><strong>Fecha de Constitución:</strong> 02 de septiembre de 2025</p>
           <p><strong>Domicilio:</strong> Comuna de Providencia, Región Metropolitana de Santiago, Chile</p>
           <p><strong>Representante Legal:</strong> José Andrés Donoso Molina, RUT 15.329.186-1</p>
-          <p><strong>Email de Contacto:</strong> joseandresdonoso290723@gmail.com</p>
+          <p><strong>Email de Contacto:</strong> contacto@lazarus.cl</p>
         </div>
         
         <h2>Objeto Social</h2>

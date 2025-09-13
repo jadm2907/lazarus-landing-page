@@ -1,53 +1,53 @@
+// frontend/src/services/leadService.js
+import axios from 'axios';
 import logger from '../utils/logger';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
+const API_URL = 'http://localhost:3000/leads';
 
-export const leadService = {
-  // Crear un nuevo lead
-  createLead: async (leadData) => {
-    try {
-      logger.info('Enviando lead al backend', { data: leadData });
-      
-      const response = await fetch(`${API_BASE_URL}/leads`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(leadData),
-      });
-
-      if (!response.ok) {
-        throw new Error(`Error HTTP: ${response.status}`);
-      }
-
-      const result = await response.json();
-      logger.info('Lead enviado exitosamente', { result });
-      
-      return result;
-    } catch (error) {
-      logger.error('Error al enviar lead:', {
-        error: error.message,
-        data: leadData
-      });
-      throw error;
-    }
-  },
-
-  // Obtener todos los leads (si necesitas esta funcionalidad)
-  getAllLeads: async () => {
-    try {
-      const response = await fetch(`${API_BASE_URL}/leads`);
-      
-      if (!response.ok) {
-        throw new Error(`Error HTTP: ${response.status}`);
-      }
-
-      return await response.json();
-    } catch (error) {
-      logger.error('Error al obtener leads:', error);
-      throw error;
-    }
+const createLead = async (data) => {
+  try {
+    const response = await axios.post(API_URL, data);
+    logger.info('Lead creado exitosamente', { leadId: response.data.data.id });
+    return response.data;
+  } catch (error) {
+    logger.error('Error al crear lead', {
+      error: error.message,
+      response: error.response?.data
+    });
+    throw error;
   }
 };
 
-export default leadService;
+const getRegions = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/regions`);
+    logger.info('Regiones obtenidas', { count: response.data.data.length });
+    return response.data;
+  } catch (error) {
+    logger.error('Error al obtener regiones', {
+      error: error.message,
+      response: error.response?.data
+    });
+    throw error;
+  }
+};
+
+const getTypeProfessionals = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/types`);
+    logger.info('Tipos de profesionales obtenidos', { count: response.data.data.length });
+    return response.data;
+  } catch (error) {
+    logger.error('Error al obtener tipos de profesionales', {
+      error: error.message,
+      response: error.response?.data
+    });
+    throw error;
+  }
+};
+
+export default {
+  createLead,
+  getRegions,
+  getTypeProfessionals
+};

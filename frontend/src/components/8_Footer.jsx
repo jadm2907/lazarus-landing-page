@@ -82,8 +82,8 @@ const Footer = () => {
 
           <div className="footer-section contact">
             <h3>Contacto</h3>
-            <p>Email: <a href="mailto:joseandresdonoso290723@gmail.com">joseandresdonoso290723@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/joseandresdonosomolina" target="_blank" rel="noopener noreferrer">José Andrés Donoso</a></p>
+            <p>Email: <a href="mailto:joseandresdonoso290723@gmail.com">contacto@lazarus.cl</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/joseandresdonosomolina" target="_blank" rel="noopener noreferrer">Lazarus Technology</a></p>
             <div className="social-links">
               <a href="#" className="social-link">FB</a>
               <a href="#" className="social-link">TW</a>

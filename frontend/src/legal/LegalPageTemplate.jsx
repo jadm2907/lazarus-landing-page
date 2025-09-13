@@ -17,7 +17,7 @@ const LegalPageTemplate = ({ title, children }) => {
       </div>
       
       <div className="legal-footer">
-        <p>Para consultas sobre estos documentos, contacte a: joseandresdonoso290723@gmail.com</p>
+        <p>Para consultas sobre estos documentos, contacte a: soporte@lazarus.cl</p>
       </div>
     </div>
   );
