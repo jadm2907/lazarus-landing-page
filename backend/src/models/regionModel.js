@@ -1,23 +1,28 @@
+// backend/src/models/regionModel.js
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/db');
+const logger = require('../utils/logger');
 
 const Region = sequelize.define('Region', {
-    regionid: {
+    region_id: {
         type: DataTypes.INTEGER,
-        autoIncrement: true,
         primaryKey: true,
+        autoIncrement: true,
+        field: 'region_id'
     },
     name: {
         type: DataTypes.STRING(80),
-        allowNull: false,
+        allowNull: false
     },
     cod_pais: {
         type: DataTypes.STRING(4),
-        allowNull: false,
-    },
+        allowNull: false
+    }
 }, {
     tableName: 'region',
-    timestamps: false,
+    timestamps: false
 });
+
+logger.info('Modelo Region definido correctamente con Sequelize');
 
 module.exports = Region;

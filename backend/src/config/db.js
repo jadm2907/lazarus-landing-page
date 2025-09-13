@@ -1,3 +1,4 @@
+// Configuración de Sequelize para MySQL
 const { Sequelize } = require('sequelize');
 const logger = require('../utils/logger');
 

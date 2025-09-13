@@ -1,3 +1,4 @@
+// backend/src/routes/leadRoutes.js
 const express = require('express');
 const router = express.Router();
 const leadController = require('../controllers/leadController');
@@ -11,5 +12,7 @@ router.use((req, res, next) => {
 });
 
 router.post('/', leadController.createLead);
+router.get('/regions', leadController.getRegions);
+router.get('/types', leadController.getTypeProfessionals);
 
 module.exports = router;

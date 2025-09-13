@@ -1,3 +1,4 @@
+// backend/server.js
 require('dotenv').config();
 const logger = require('./src/utils/logger');
 
